@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="apitestcases.TC001_POST_Request">
+        <methods>
+          <include name="endGeneareReport"/>
+          <include name="signUp"/>
+          <include name="setUp"/>
+          <include name="validationOfPostRequest"/>
+          <include name="endsetUp"/>
+        </methods>
+      </class> <!-- apitestcases.TC001_POST_Request -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
