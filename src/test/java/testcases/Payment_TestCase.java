@@ -52,6 +52,7 @@ public class Payment_TestCase extends BaseClass {
 			ExcelReader.setExcelFile(getExcelPath() + getTestDataFileName(), "Payment");
 			int iTestCaseRow = ExcelReader.getRowContains(sTestCaseName, Constant.Col_TestCaseName);
 			extentTest = onStart().startTest(sTestCaseName);
+			driver.get(properties.getProperty("freemiumDevUrl"));
 		} catch (Exception e) {
 			captureScreen(driver, "Home_TestCase");
 			Assert.assertFalse(true);
