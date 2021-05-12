@@ -1,4 +1,4 @@
-package com.freemium.base;
+/*package com.freemium.base;
 
 import org.apache.log4j.Logger;
 import org.testng.annotations.AfterTest;
@@ -29,3 +29,4 @@ public class RestBaseClass extends RestUtils{
 	}
 
 }
+*/
