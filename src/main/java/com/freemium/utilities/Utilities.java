@@ -101,8 +101,8 @@ public class Utilities {
 				logger.debug("Launching edge");
 			}
 
-			driver.get(properties.getProperty("freemiumDevUrl"));
-			logger.info("Url Launched :" + properties.getProperty("freemiumDevUrl"));
+			/*driver.get(properties.getProperty("freemiumDevUrl"));
+			logger.info("Url Launched :" + properties.getProperty("freemiumDevUrl"));*/
 			driver.manage().window().maximize();
 
 		} catch (Exception e) {
