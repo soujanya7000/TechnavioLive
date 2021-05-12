@@ -101,8 +101,8 @@ public class Utilities {
 				logger.debug("Launching edge");
 			}
 
-			driver.get(properties.getProperty("freemiumDevUrl"));
-			logger.info("Url Launched :" + properties.getProperty("freemiumDevUrl"));
+			/*driver.get(properties.getProperty("freemiumDevUrl"));
+			logger.info("Url Launched :" + properties.getProperty("freemiumDevUrl"));*/
 			driver.manage().window().maximize();
 
 		} catch (Exception e) {
@@ -247,6 +247,41 @@ public class Utilities {
 			return freemiumPassword;
 		else
 			throw new RuntimeException(" freemium password not specified in the automationrepository.properties file.");
+	}
+	public String getFremiumName() {
+		String name = properties.getProperty("Name");
+		if (name != null)
+			return name;
+		else
+			throw new RuntimeException(" freemium Name not specified in the automationrepository.properties file.");
+	}
+	public String getFremiumEmail() {
+		String email = properties.getProperty("email");
+		if (email != null)
+			return email;
+		else
+			throw new RuntimeException(" freemium Email not specified in the automationrepository.properties file.");
+	}
+	public String getFremiumPasswordField() {
+		String passwordField = properties.getProperty("passwordField");
+		if (passwordField != null)
+			return passwordField;
+		else
+			throw new RuntimeException(" freemium password not specified in the automationrepository.properties file.");
+	}
+	public String getFremiuminviteUserName() {
+		String passwordField = properties.getProperty("inviteUserName");
+		if (passwordField != null)
+			return passwordField;
+		else
+			throw new RuntimeException(" freemium invite UserName not specified in the automationrepository.properties file.");
+	}
+	public String getFremiuminviteEmail() {
+		String passwordField = properties.getProperty("inviteEmail");
+		if (passwordField != null)
+			return passwordField;
+		else
+			throw new RuntimeException(" freemium invite Email not specified in the automationrepository.properties file.");
 	}
 
 }

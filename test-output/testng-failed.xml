@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="apitestcases.TC001_POST_Request">
+      <class name="testcases.SignUp_TestCase">
         <methods>
-          <include name="endGeneareReport"/>
-          <include name="signUp"/>
+          <include name="validationForSignUp"/>
           <include name="setUp"/>
-          <include name="validationOfPostRequest"/>
-          <include name="endsetUp"/>
+          <include name="signUpSetUp"/>
+          <include name="validationForInviteUser"/>
+          <include name="geneareReport"/>
         </methods>
-      </class> <!-- apitestcases.TC001_POST_Request -->
+      </class> <!-- testcases.SignUp_TestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

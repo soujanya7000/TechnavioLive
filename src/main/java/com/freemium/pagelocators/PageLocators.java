@@ -121,16 +121,48 @@ public class PageLocators {
 	public static WebElement firstCartIconClassName;
 	@FindBy(how=How.XPATH,using="//*[@title='Purchased']")
 	public static List<WebElement> purchaseReportList;
-	
-	
-	
-	
-	
-	
-	
-	
 	@FindBy(how=How.XPATH,using="(//div[@class='tab-meta '])[1]/child::div[contains(@class,'new-product-card ')]")
 	public static List<WebElement> waitForFavTabReports;
+	
+	//Signup
+	
+	@FindBy(how = How.XPATH, using = "(//*[@class='alert alert-success alert-invite']/following::input)[1]")
+	public static WebElement firstName;
+	@FindBy(how = How.NAME, using = "email")
+	public static WebElement email;
+	@FindBy(how = How.NAME, using = "password")
+	public static WebElement password;
+	@FindBy(how = How.XPATH, using = "(//*[contains(@class,'col-lg-6')]/ul/li)[1]")
+	public static WebElement lowerCase;
+	@FindBy(how = How.XPATH, using = "(//*[contains(@class,'col-lg-6')]/ul/li)[2]")
+	public static WebElement upperCase;
+	@FindBy(how = How.XPATH, using = "(//*[contains(@class,'col-lg-6')]/ul/li)[3]")
+	public static WebElement oneNumber;
+	@FindBy(how = How.XPATH, using = "((//*[contains(@class,'col-lg-6')]/ul)[2]/li)[1]")
+	public static WebElement symbols;
+	@FindBy(how = How.XPATH, using = "((//*[contains(@class,'col-lg-6')]/ul)[2]/li)[2]")
+	public static WebElement length;
+	@FindBy(how = How.ID, using = "checkbox")
+	public static WebElement toAgree;
+	@FindBy(how = How.CLASS_NAME, using = "submit")
+	public static WebElement submit;
+	@FindBy(how = How.XPATH, using = "//*[@class='not_you']/a")
+	public static WebElement inviteUser;
+	@FindBy(how = How.NAME, using = "signup_name")
+	public static WebElement inviteUserName;
+	@FindBy(how = How.NAME, using = "signup_email")
+	public static WebElement inviteEmail;
+	@FindBy(how = How.ID, using = "send_sign_up_invite")
+	public static WebElement requestInvite;
+	@FindBy(how = How.XPATH, using = "//*[contains(@class,'alert alert-success')]/p")
+	public static WebElement sucessInvite;
+	
+	
+	
+	
+	
+	
+	
 	
 	//favorite Reports
 	@FindBy(how=How.XPATH,using="(//div[@class=\"tab-meta \"])[1]/child::div[contains(@class,'new-product-card ')]")

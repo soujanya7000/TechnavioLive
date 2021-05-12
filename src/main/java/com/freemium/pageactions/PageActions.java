@@ -19,6 +19,7 @@ public class PageActions extends Utilities {
 		this.pageLocator = new PageLocators();
 		PageFactory.initElements(driver, this.pageLocator);
 	}
+	
 		//username field
 	public static void clickOnNextButton() throws Exception {
 		PageLocators.useridnext.click();
@@ -271,6 +272,43 @@ public class PageActions extends Utilities {
 		PageLocators.addressBox2.sendKeys(addressBox2);
 		log.info("Entering addressBox2 ");
 	}
+	//sign up field
+		public static void nameParameter(String Name) throws Exception {
+			PageLocators.firstName.sendKeys(Name);
+			log.info("Freemium Name Passed");
+		}
+		public  void emailParameter(String email) throws Exception {
+			PageLocators.email.sendKeys(email);
+			log.info(" Freemium User email Passed");
+		}
+		public  void passwordFieldParameter(String passwordField) throws Exception {
+			PageLocators.password.sendKeys(passwordField);
+			log.info(" Freemium password Passed");
+		}
+		public static void clickONToAgree() throws Exception {
+			PageLocators.toAgree.click();
+			log.info("Click On Next Button");
+		}
+		public static void clickONSubmit() throws Exception {
+			PageLocators.submit.click();
+			log.info("Click On Next Button");
+		}
+		public static void clickONinviteUser() throws Exception {
+			PageLocators.inviteUser.click();
+			log.info("Click On invite User Link");
+		}
+		public  void inviteUserNameParameter(String inviteUserName) throws Exception {
+			PageLocators.inviteUserName.sendKeys(inviteUserName);
+			log.info(" Freemium Invite User Name Passed");
+		}
+		public  void inviteEmailParameter(String inviteEmail) throws Exception {
+			PageLocators.inviteEmail.sendKeys(inviteEmail);
+			log.info(" Freemium invite Email Passed");
+		}
+		public static void clickOnRequestInvite() throws Exception {
+			PageLocators.requestInvite.click();
+			log.info("Click On Request Inviter Link");
+		}
 	
 	
 
