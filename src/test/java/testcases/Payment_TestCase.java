@@ -70,6 +70,7 @@ public class Payment_TestCase extends BaseClass {
 	public void validatePaymentSection() throws IOException {
 
 		try {
+			
 			rowCount = ExcelReader.getRowUsed();
 			for (iTestCaseRow = 1; iTestCaseRow <= rowCount; iTestCaseRow++) {
 				paymentMode = ExcelReader.getCellData(iTestCaseRow, Constant.Col_PaymentMode);
@@ -692,6 +693,9 @@ public class Payment_TestCase extends BaseClass {
 					String actualMsg = PageLocators.paymentErrorMsg.getText();
 					if (errorMsgsList.contains(actualMsg)) {
 						logger.info(PageLocators.paymentErrorMsg.getText());
+						extentTest.log(LogStatus.FAIL, PageLocators.paymentErrorMsg.getText());
+						Assert.assertTrue(false);
+						captureScreen(driver, sTestCaseName);
 						continue;
 					} else {
 						extentTest.log(LogStatus.FAIL, "Un-Relavent Error Message Displayed : " + actualMsg);
@@ -756,6 +760,8 @@ public class Payment_TestCase extends BaseClass {
 					String actualMsg = PageLocators.paymentErrorMsg.getText();
 					if (errorMsgsList.contains(actualMsg)) {
 						logger.info(PageLocators.paymentErrorMsg.getText());
+						extentTest.log(LogStatus.FAIL, "Un-Relavent Error Message Displayed : ");
+						Assert.assertTrue(false);
 						continue;
 					} else {
 						extentTest.log(LogStatus.FAIL, "Un-Relavent Error Message Displayed : " + actualMsg);

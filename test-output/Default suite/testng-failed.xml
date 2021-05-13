@@ -3,14 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testcases.Common_Login">
+      <class name="testcases.Payment_TestCase">
         <methods>
-          <include name="freemiumUserlogin"/>
           <include name="setUp"/>
+          <include name="homePageSetUp"/>
+          <include name="logOut"/>
           <include name="urlSetUp"/>
-          <include name="logoutPage"/>
+          <include name="geneareReport"/>
+          <include name="closeBrowser"/>
+          <include name="validatePaymentSection"/>
         </methods>
-      </class> <!-- testcases.Common_Login -->
+      </class> <!-- testcases.Payment_TestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
