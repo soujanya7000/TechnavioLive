@@ -1,5 +1,7 @@
 package testcases;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
@@ -14,6 +16,7 @@ public class Common_Login extends Utilities {
 			PageActions actions = new PageActions();
 
 			waitState();
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.userId)));
 			actions.userNameParameter(getFreemiumUserName());
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.nextButtonXpath)));
@@ -21,6 +24,7 @@ public class Common_Login extends Utilities {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.passwordId)));
 			PageActions.passwordParameter(getFremiumPassword());
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.signInButtonId)));
+			Thread.sleep(2000);
 			PageActions.clickOnSignInButton();
 		} catch (Exception e) {
 			throw e;

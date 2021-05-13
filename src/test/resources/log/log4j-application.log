@@ -13214,3 +13214,224 @@ Driver info: driver.version: unknown
 2021-05-13 13:15:58 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
 2021-05-13 13:15:58 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
 2021-05-13 13:15:58 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Soujanya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2021-05-13 13:33:01 INFO  Payment_TestCase:24 -  @BeforeSuite Calling
+2021-05-13 13:33:05 DEBUG Payment_TestCase:96 - Launching chrome
+2021-05-13 13:34:07 INFO  Payment_TestCase:77 - destination : C:\Users\Soujanya\git\TechnavioLive\src\test\resources\Screenshots\Home_TestCase20210513013407.png
+2021-05-13 13:34:07 INFO  Payment_TestCase:78 - Screen Shot Taken Home_TestCase
+2021-05-13 13:37:18 INFO  Payment_TestCase:24 -  @BeforeSuite Calling
+2021-05-13 13:37:22 DEBUG Payment_TestCase:96 - Launching chrome
+2021-05-13 13:37:28 INFO  PageActions:30 -  Freemium User Name Passed
+2021-05-13 13:37:28 INFO  PageActions:25 - Click On Next Button
+2021-05-13 13:37:34 INFO  PageActions:45 - Freemium Password Passed
+2021-05-13 13:37:36 INFO  PageActions:40 -  Click on Sign-In Button
+2021-05-13 13:37:37 INFO  ExcelReader:33 - Excel sheet opened
+2021-05-13 13:37:37 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-13 13:37:37 INFO  Payment_TestCase:60 - This is Before Class
+2021-05-13 13:37:37 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-13 13:37:48 INFO  Payment_TestCase:275 - Wait for cartIconStatus completed
+2021-05-13 13:37:49 INFO  Payment_TestCase:239 - reportName  :  : Smart Bumper Market by End-user and Geography - Forecast and Analysis 2020-2024
+2021-05-13 13:37:49 INFO  Payment_TestCase:376 - wait completed
+2021-05-13 13:37:49 INFO  Payment_TestCase:379 - return true
+2021-05-13 13:37:49 INFO  Payment_TestCase:242 - actualMsg -  Product is added to Cart.
+2021-05-13 13:38:29 INFO  Payment_TestCase:24 -  @BeforeSuite Calling
+2021-05-13 13:38:34 DEBUG Payment_TestCase:96 - Launching chrome
+2021-05-13 13:38:39 INFO  PageActions:30 -  Freemium User Name Passed
+2021-05-13 13:38:40 INFO  PageActions:25 - Click On Next Button
+2021-05-13 13:38:43 INFO  PageActions:45 - Freemium Password Passed
+2021-05-13 13:38:45 INFO  PageActions:40 -  Click on Sign-In Button
+2021-05-13 13:38:46 INFO  ExcelReader:33 - Excel sheet opened
+2021-05-13 13:38:46 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-13 13:38:47 INFO  Payment_TestCase:60 - This is Before Class
+2021-05-13 13:38:47 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-13 13:38:56 INFO  Payment_TestCase:275 - Wait for cartIconStatus completed
+2021-05-13 13:38:59 INFO  PageActions:128 - Click On goToIcon
+2021-05-13 13:39:00 INFO  Payment_TestCase:414 -  Wait For Cart Tab 
+2021-05-13 13:39:00 INFO  Payment_TestCase:415 -  Enter into isReportPresentInCartTab   : : 
+2021-05-13 13:39:00 INFO  Payment_TestCase:418 -  isReportPresentInCartTab Enter ForLoop : : 0
+2021-05-13 13:39:00 INFO  Payment_TestCase:421 -  actualCartReportName  : : Smart Bumper Market by End-user and Geography - Forecast and Analysis 2020-2024
+2021-05-13 13:39:00 INFO  Payment_TestCase:422 -  homeReportName  :  : Smart Bumper Market by End-user and Geography - Forecast and Analysis 2020-2024
+2021-05-13 13:39:00 INFO  Payment_TestCase:427 - Smart Bumper Market by End-user and Geography - Forecast and Analysis 2020-2024 Expected Report is Active State  : : Smart Bumper Market by End-user and Geography - Forecast and Analysis 2020-2024
+2021-05-13 13:39:00 INFO  Payment_TestCase:430 -  after completing wait state for continue button
+2021-05-13 13:39:00 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-13 13:39:00 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-13 13:39:00 INFO  Payment_TestCase:434 - Entering the card address
+2021-05-13 13:39:01 INFO  PageActions:223 - Click On ContinueStep2
+2021-05-13 13:39:01 INFO  Payment_TestCase:443 - Click On Billing info Continue
+2021-05-13 13:39:01 INFO  PageActions:157 - Entering addressParameter 
+2021-05-13 13:39:01 INFO  Payment_TestCase:639 - Entering to address field
+2021-05-13 13:39:01 INFO  PageActions:161 - Entering cityParameter 
+2021-05-13 13:39:01 INFO  Payment_TestCase:642 - Entering to City field
+2021-05-13 13:39:02 INFO  PageActions:223 - Click On ContinueStep2
+2021-05-13 13:39:02 INFO  PageActions:205 - Click On clickOnRadioIcon 
+2021-05-13 13:39:02 INFO  Payment_TestCase:454 - Click On Proceed
+2021-05-13 13:39:05 INFO  Payment_TestCase:458 - Scrolling to Continue button
+2021-05-13 13:39:05 INFO  PageActions:223 - Click On ContinueStep2
+2021-05-13 13:39:05 INFO  Payment_TestCase:461 - Click On Billing info Continue
+2021-05-13 13:39:08 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-13 13:39:08 INFO  PageActions:175 - Entering cardHolderName 
+2021-05-13 13:39:08 INFO  Payment_TestCase:731 - Entering cardHolderName
+2021-05-13 13:39:08 INFO  PageActions:180 - Entering cardHoldNumber 
+2021-05-13 13:39:08 INFO  Payment_TestCase:734 - Entering cardHoldNumber
+2021-05-13 13:39:09 INFO  PageActions:184 - Entering cardHoldCvv 
+2021-05-13 13:39:09 INFO  Payment_TestCase:737 - Entering cardHoldCvv
+2021-05-13 13:39:09 INFO  PageActions:197 - Click On to AgreeCheck 
+2021-05-13 13:39:09 INFO  Payment_TestCase:744 - Click to AgreeCheck
+2021-05-13 13:39:09 INFO  PageActions:236 - Click On CheckOut 
+2021-05-13 13:39:09 INFO  Payment_TestCase:747 - Click On CheckOut
+2021-05-13 13:39:09 INFO  Payment_TestCase:765 - Return True
+2021-05-13 13:40:12 INFO  PageActions:85 - Click On admin Icon
+2021-05-13 13:40:12 INFO  PageActions:89 - Logout Sucessfully
+2021-05-13 13:40:12 INFO  Payment_TestCase:108 - Succesfully logged out
+2021-05-13 13:40:12 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2021-05-13 13:40:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2021-05-13 13:40:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2021-05-13 13:40:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2021-05-13 13:40:12 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Soujanya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2021-05-13 13:40:13 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2021-05-13 13:40:13 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2021-05-13 13:40:13 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2021-05-13 13:40:13 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2021-05-13 13:40:13 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Soujanya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2021-05-13 13:40:13 INFO  Payment_TestCase:44 -  Closing Browser 
+2021-05-13 13:40:13 INFO  Payment_TestCase:46 -  @AfterSuite  
+2021-05-13 13:41:38 INFO  Payment_TestCase:24 -  @BeforeSuite Calling
+2021-05-13 13:41:42 DEBUG Payment_TestCase:96 - Launching chrome
+2021-05-13 13:41:55 INFO  PageActions:30 -  Freemium User Name Passed
+2021-05-13 13:41:55 INFO  PageActions:25 - Click On Next Button
+2021-05-13 13:42:00 INFO  PageActions:45 - Freemium Password Passed
+2021-05-13 13:42:03 INFO  PageActions:40 -  Click on Sign-In Button
+2021-05-13 13:42:05 INFO  ExcelReader:33 - Excel sheet opened
+2021-05-13 13:42:05 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-13 13:42:05 INFO  Payment_TestCase:60 - This is Before Class
+2021-05-13 13:42:05 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-13 13:42:16 INFO  Payment_TestCase:275 - Wait for cartIconStatus completed
+2021-05-13 13:42:16 INFO  Payment_TestCase:239 - reportName  :  : Smart Bumper Market by End-user and Geography - Forecast and Analysis 2020-2024
+2021-05-13 13:42:16 INFO  Payment_TestCase:376 - wait completed
+2021-05-13 13:42:16 INFO  Payment_TestCase:379 - return true
+2021-05-13 13:42:16 INFO  Payment_TestCase:242 - actualMsg -  Product is added to Cart.
+2021-05-13 13:42:42 INFO  Payment_TestCase:245 - waitForlatestTabGoToCartIcon  Completed
+2021-05-13 13:42:46 INFO  PageActions:128 - Click On goToIcon
+2021-05-13 13:42:46 INFO  Payment_TestCase:247 - goToCartPage  Completed
+2021-05-13 13:42:46 INFO  Payment_TestCase:414 -  Wait For Cart Tab 
+2021-05-13 13:42:46 INFO  Payment_TestCase:415 -  Enter into isReportPresentInCartTab   : : 
+2021-05-13 13:42:46 INFO  Payment_TestCase:418 -  isReportPresentInCartTab Enter ForLoop : : 0
+2021-05-13 13:42:47 INFO  Payment_TestCase:421 -  actualCartReportName  : : Smart Bumper Market by End-user and Geography - Forecast and Analysis 2020-2024
+2021-05-13 13:42:47 INFO  Payment_TestCase:422 -  homeReportName  :  : Smart Bumper Market by End-user and Geography - Forecast and Analysis 2020-2024
+2021-05-13 13:42:47 INFO  Payment_TestCase:427 - Smart Bumper Market by End-user and Geography - Forecast and Analysis 2020-2024 Expected Report is Active State  : : Smart Bumper Market by End-user and Geography - Forecast and Analysis 2020-2024
+2021-05-13 13:42:47 INFO  Payment_TestCase:430 -  after completing wait state for continue button
+2021-05-13 13:42:47 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-13 13:42:47 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-13 13:42:47 INFO  Payment_TestCase:434 - Entering the card address
+2021-05-13 13:42:47 INFO  PageActions:223 - Click On ContinueStep2
+2021-05-13 13:42:47 INFO  Payment_TestCase:443 - Click On Billing info Continue
+2021-05-13 13:42:48 INFO  PageActions:157 - Entering addressParameter 
+2021-05-13 13:42:48 INFO  Payment_TestCase:639 - Entering to address field
+2021-05-13 13:42:48 INFO  PageActions:161 - Entering cityParameter 
+2021-05-13 13:42:48 INFO  Payment_TestCase:642 - Entering to City field
+2021-05-13 13:42:48 INFO  PageActions:223 - Click On ContinueStep2
+2021-05-13 13:42:48 INFO  PageActions:205 - Click On clickOnRadioIcon 
+2021-05-13 13:42:48 INFO  Payment_TestCase:454 - Click On Proceed
+2021-05-13 13:42:51 INFO  Payment_TestCase:458 - Scrolling to Continue button
+2021-05-13 13:42:51 INFO  PageActions:223 - Click On ContinueStep2
+2021-05-13 13:42:51 INFO  Payment_TestCase:461 - Click On Billing info Continue
+2021-05-13 13:42:54 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-13 13:42:55 INFO  PageActions:175 - Entering cardHolderName 
+2021-05-13 13:42:55 INFO  Payment_TestCase:731 - Entering cardHolderName
+2021-05-13 13:42:55 INFO  PageActions:180 - Entering cardHoldNumber 
+2021-05-13 13:42:55 INFO  Payment_TestCase:734 - Entering cardHoldNumber
+2021-05-13 13:42:55 INFO  PageActions:184 - Entering cardHoldCvv 
+2021-05-13 13:42:55 INFO  Payment_TestCase:737 - Entering cardHoldCvv
+2021-05-13 13:42:55 INFO  PageActions:197 - Click On to AgreeCheck 
+2021-05-13 13:42:55 INFO  Payment_TestCase:744 - Click to AgreeCheck
+2021-05-13 13:44:20 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-13 13:44:20 INFO  PageActions:175 - Entering cardHolderName 
+2021-05-13 13:44:20 INFO  Payment_TestCase:731 - Entering cardHolderName
+2021-05-13 13:44:20 INFO  PageActions:180 - Entering cardHoldNumber 
+2021-05-13 13:44:20 INFO  Payment_TestCase:734 - Entering cardHoldNumber
+2021-05-13 13:44:21 INFO  PageActions:184 - Entering cardHoldCvv 
+2021-05-13 13:44:21 INFO  Payment_TestCase:737 - Entering cardHoldCvv
+2021-05-13 13:44:21 INFO  PageActions:197 - Click On to AgreeCheck 
+2021-05-13 13:44:21 INFO  Payment_TestCase:744 - Click to AgreeCheck
+2021-05-13 13:44:30 INFO  PageActions:236 - Click On CheckOut 
+2021-05-13 13:44:31 INFO  Payment_TestCase:747 - Click On CheckOut
+2021-05-13 13:45:38 INFO  Payment_TestCase:755 - Please agree to proceed!
+2021-05-13 13:48:10 INFO  PageActions:85 - Click On admin Icon
+2021-05-13 13:48:10 INFO  PageActions:89 - Logout Sucessfully
+2021-05-13 13:48:10 INFO  Payment_TestCase:108 - Succesfully logged out
+2021-05-13 13:48:10 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2021-05-13 13:48:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2021-05-13 13:48:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2021-05-13 13:48:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2021-05-13 13:48:10 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Soujanya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2021-05-13 13:48:10 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2021-05-13 13:48:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2021-05-13 13:48:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2021-05-13 13:48:10 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2021-05-13 13:48:11 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Soujanya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2021-05-13 13:48:11 INFO  Payment_TestCase:44 -  Closing Browser 
+2021-05-13 13:48:11 INFO  Payment_TestCase:46 -  @AfterSuite  
+2021-05-13 13:49:08 INFO  Payment_TestCase:24 -  @BeforeSuite Calling
+2021-05-13 13:49:13 DEBUG Payment_TestCase:96 - Launching chrome
+2021-05-13 13:49:18 INFO  PageActions:30 -  Freemium User Name Passed
+2021-05-13 13:49:19 INFO  PageActions:25 - Click On Next Button
+2021-05-13 13:49:23 INFO  PageActions:45 - Freemium Password Passed
+2021-05-13 13:49:26 INFO  PageActions:40 -  Click on Sign-In Button
+2021-05-13 13:49:27 INFO  ExcelReader:33 - Excel sheet opened
+2021-05-13 13:49:27 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-13 13:49:27 INFO  Payment_TestCase:60 - This is Before Class
+2021-05-13 13:49:27 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-13 13:49:38 INFO  Payment_TestCase:275 - Wait for cartIconStatus completed
+2021-05-13 13:49:42 INFO  PageActions:128 - Click On goToIcon
+2021-05-13 13:49:42 INFO  Payment_TestCase:414 -  Wait For Cart Tab 
+2021-05-13 13:49:42 INFO  Payment_TestCase:415 -  Enter into isReportPresentInCartTab   : : 
+2021-05-13 13:49:42 INFO  Payment_TestCase:418 -  isReportPresentInCartTab Enter ForLoop : : 0
+2021-05-13 13:49:42 INFO  Payment_TestCase:421 -  actualCartReportName  : : Smart Bumper Market by End-user and Geography - Forecast and Analysis 2020-2024
+2021-05-13 13:49:42 INFO  Payment_TestCase:422 -  homeReportName  :  : Smart Bumper Market by End-user and Geography - Forecast and Analysis 2020-2024
+2021-05-13 13:49:42 INFO  Payment_TestCase:427 - Smart Bumper Market by End-user and Geography - Forecast and Analysis 2020-2024 Expected Report is Active State  : : Smart Bumper Market by End-user and Geography - Forecast and Analysis 2020-2024
+2021-05-13 13:49:42 INFO  Payment_TestCase:430 -  after completing wait state for continue button
+2021-05-13 13:49:42 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-13 13:49:42 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-13 13:49:42 INFO  Payment_TestCase:434 - Entering the card address
+2021-05-13 13:49:43 INFO  PageActions:223 - Click On ContinueStep2
+2021-05-13 13:49:43 INFO  Payment_TestCase:443 - Click On Billing info Continue
+2021-05-13 13:49:43 INFO  PageActions:157 - Entering addressParameter 
+2021-05-13 13:49:43 INFO  Payment_TestCase:639 - Entering to address field
+2021-05-13 13:49:44 INFO  PageActions:161 - Entering cityParameter 
+2021-05-13 13:49:44 INFO  Payment_TestCase:642 - Entering to City field
+2021-05-13 13:49:44 INFO  PageActions:223 - Click On ContinueStep2
+2021-05-13 13:49:44 INFO  PageActions:205 - Click On clickOnRadioIcon 
+2021-05-13 13:49:44 INFO  Payment_TestCase:454 - Click On Proceed
+2021-05-13 13:49:47 INFO  Payment_TestCase:458 - Scrolling to Continue button
+2021-05-13 13:49:47 INFO  PageActions:223 - Click On ContinueStep2
+2021-05-13 13:49:47 INFO  Payment_TestCase:461 - Click On Billing info Continue
+2021-05-13 13:49:50 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-13 13:49:50 INFO  PageActions:175 - Entering cardHolderName 
+2021-05-13 13:49:50 INFO  Payment_TestCase:731 - Entering cardHolderName
+2021-05-13 13:49:51 INFO  PageActions:180 - Entering cardHoldNumber 
+2021-05-13 13:49:51 INFO  Payment_TestCase:734 - Entering cardHoldNumber
+2021-05-13 13:49:51 INFO  PageActions:184 - Entering cardHoldCvv 
+2021-05-13 13:49:51 INFO  Payment_TestCase:737 - Entering cardHoldCvv
+2021-05-13 13:49:51 INFO  PageActions:197 - Click On to AgreeCheck 
+2021-05-13 13:49:51 INFO  Payment_TestCase:744 - Click to AgreeCheck
+2021-05-13 13:50:06 INFO  PageActions:236 - Click On CheckOut 
+2021-05-13 13:50:07 INFO  Payment_TestCase:747 - Click On CheckOut
+2021-05-13 13:51:07 INFO  Payment_TestCase:755 - This value must be greater than or equal to 1.
+2021-05-13 13:55:01 INFO  Payment_TestCase:77 - destination : C:\Users\Soujanya\git\TechnavioLive\src\test\resources\Screenshots\Payment_TestCase20210513015422.png
+2021-05-13 13:55:01 INFO  Payment_TestCase:78 - Screen Shot Taken Payment_TestCase
+2021-05-13 13:55:28 INFO  Payment_TestCase:77 - destination : C:\Users\Soujanya\git\TechnavioLive\src\test\resources\Screenshots\validatePaymentSection20210513015528.png
+2021-05-13 13:55:28 INFO  Payment_TestCase:78 - Screen Shot Taken validatePaymentSection
+2021-05-13 13:55:28 INFO  PageActions:85 - Click On admin Icon
+2021-05-13 13:55:28 INFO  PageActions:89 - Logout Sucessfully
+2021-05-13 13:55:28 INFO  Payment_TestCase:108 - Succesfully logged out
+2021-05-13 13:55:29 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2021-05-13 13:55:29 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2021-05-13 13:55:29 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2021-05-13 13:55:29 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2021-05-13 13:55:29 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Soujanya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2021-05-13 13:55:30 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2021-05-13 13:55:30 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2021-05-13 13:55:30 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2021-05-13 13:55:30 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2021-05-13 13:55:30 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Soujanya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2021-05-13 13:55:30 INFO  Payment_TestCase:44 -  Closing Browser 
+2021-05-13 13:55:30 INFO  Payment_TestCase:46 -  @AfterSuite  

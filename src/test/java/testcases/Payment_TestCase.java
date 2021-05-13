@@ -267,6 +267,8 @@ public class Payment_TestCase extends BaseClass {
 
 		} catch (Exception e) {
 			// TODO: handle exception
+			captureScreen(driver, sTestCaseName);
+			Assert.assertFalse(true);
 		}
 	}
 
@@ -746,6 +748,8 @@ public class Payment_TestCase extends BaseClass {
 				PageActions.clickOnCheckOut();
 				logger.info("Click On CheckOut");
 				extentTest.log(LogStatus.INFO, "Click On CheckOut");
+				wait.until(
+						ExpectedConditions.invisibilityOfElementLocated(By.xpath(PageLocators.waitForLoderScreen)));
 				if (PageLocators.paymentErrorMsg.isDisplayed()) {
 					List<String> errorMsgsList = errorMsgsList();
 					String actualMsg = PageLocators.paymentErrorMsg.getText();

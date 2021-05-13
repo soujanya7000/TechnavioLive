@@ -7,7 +7,10 @@
         <methods>
           <include name="setUp"/>
           <include name="homePageSetUp"/>
+          <include name="logOut"/>
           <include name="urlSetUp"/>
+          <include name="geneareReport"/>
+          <include name="closeBrowser"/>
           <include name="validatePaymentSection"/>
         </methods>
       </class> <!-- testcases.Payment_TestCase -->

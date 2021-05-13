@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-skipped">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Soujanya\AppData\Local\Temp\testng-eclipse--2146643626\testng-customsuite.xml</span>
+                    <span>C:\Users\Soujanya\AppData\Local\Temp\testng-eclipse-90503185\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,  1 skipped,  </span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Default_suite">
+                    <div class="method-list-content failed suite-Default_suite">
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testcases.Payment_TestCase" hash-for-method="validatePaymentSection">validatePaymentSection</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Default_suite -->
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,9 +117,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-skipped">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
               <span class="class-name">testcases.Payment_TestCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -128,14 +128,48 @@
                   <a name="validatePaymentSection">
                   </a> <!-- validatePaymentSection -->
                   <span class="method-name">validatePaymentSection</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertFalse(Assert.java:63)
+	at org.testng.Assert.assertFalse(Assert.java:73)
+	at testcases.Payment_TestCase.validationForReportOnlinePurchase(Payment_TestCase.java:271)
+	at testcases.Payment_TestCase.validatePaymentSection(Payment_TestCase.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-skipped -->
+          </div> <!-- suite-Default_suite-class-failed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Soujanya\AppData\Local\Temp\testng-eclipse--2146643626\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Soujanya\AppData\Local\Temp\testng-eclipse-90503185\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -188,12 +222,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'validatePaymentSection')
 data.setCell(0, 2, 'testcases.Payment_TestCase')
-data.setCell(0, 3, 4);
+data.setCell(0, 3, 360223);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 ms</span>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -226,18 +260,30 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">urlSetUp</span>
-                <span class="method-start">4390 ms</span>
+                <span class="method-start">4658 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">homePageSetUp</span>
-                <span class="method-start">56742 ms</span>
+                <span class="method-start">9120 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">validatePaymentSection</span>
-                <span class="method-start">63025 ms</span>
+                <span class="method-start">18876 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">geneareReport([TestResult name=validatePaymentSection status=FAILURE method=Payment_TestCase.validatePaymentSectio...)</span>
+                <span class="method-start">379117 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">logOut</span>
+                <span class="method-start">379437 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-suite after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">380015 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
