@@ -9,6 +9,7 @@ import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.freemium.base.BaseClass;
@@ -40,6 +41,11 @@ public class Login_TestCase extends BaseClass {
 			e.printStackTrace();
 		}
 
+	}
+	@BeforeTest
+	public void urlSetUp() throws IOException {
+		driver.manage().deleteAllCookies();
+		driver.get(properties.getProperty("freemiumDevUrl"));
 	}
 	@AfterMethod
 	public void geneareReport(ITestResult iTestResult) throws IOException {
