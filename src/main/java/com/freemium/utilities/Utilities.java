@@ -1,5 +1,8 @@
 package com.freemium.utilities;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -153,6 +156,15 @@ public class Utilities {
 	}
 	public void actions() {
 		Actions action=new Actions(driver);
+	}
+	public static void hardRefresh() throws Exception {
+		Robot r=new Robot();
+		r.keyPress(KeyEvent.VK_CONTROL);
+		r.keyPress(KeyEvent.VK_SHIFT);
+		r.keyPress(KeyEvent.VK_R);
+		r.keyRelease(KeyEvent.VK_CONTROL);
+		r.keyRelease(KeyEvent.VK_SHIFT);
+		r.keyRelease(KeyEvent.VK_R);
 	}
 
 	public static String getTestCaseName(String sTestCase) throws Exception {

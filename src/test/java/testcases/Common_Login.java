@@ -2,6 +2,7 @@ package testcases;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.spi.LoggerRepository;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
@@ -16,6 +17,10 @@ public class Common_Login extends Utilities {
 			PageActions actions = new PageActions();
 
 			waitState();
+			driver.manage().deleteAllCookies();
+			logger.info("Deleted all cookies");
+			hardRefresh();
+			logger.info("Hard refresh");
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.userId)));
 			actions.userNameParameter(getFreemiumUserName());
@@ -24,8 +29,10 @@ public class Common_Login extends Utilities {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.nextButtonXpath)));
 			PageActions.clickOnNextButton();
 			logger.info("waiting for password passing sso page in 10 sec");
+			hardRefresh();
+			logger.info("Hard refresh");
 			Thread.sleep(10000);
-			driver.navigate().refresh();
+			//driver.manage().deleteAllCookies();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.passwordId)));
 			PageActions.passwordParameter(getFremiumPassword());
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.signInButtonId)));
