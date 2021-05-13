@@ -13784,3 +13784,57 @@ Driver info: driver.version: unknown
 2021-05-13 22:24:06 INFO  PageActions:309 - Click On Request Inviter Link
 2021-05-13 22:24:06 INFO  SignUp_TestCase:44 -  Closing Browser 
 2021-05-13 22:24:06 INFO  SignUp_TestCase:46 -  @AfterSuite  
+2021-05-13 22:34:06 INFO  SignUp_TestCase:24 -  @BeforeSuite Calling
+2021-05-13 22:34:11 DEBUG SignUp_TestCase:99 - Launching chrome
+2021-05-13 22:34:20 INFO  SignUp_TestCase:30 - Url Launched :https://tipphalcon-test.infinian.team/contents/signup.php
+2021-05-13 22:34:20 INFO  SignUp_TestCase:36 - This is Befor Class
+2021-05-13 22:34:21 INFO  PageActions:277 - Freemium Name Passed
+2021-05-13 22:34:21 INFO  SignUp_TestCase:67 - Entering the User Name
+2021-05-13 22:34:21 INFO  PageActions:281 -  Freemium User email Passed
+2021-05-13 22:34:21 INFO  SignUp_TestCase:70 - Entering the email
+2021-05-13 22:34:21 INFO  PageActions:285 -  Freemium password Passed
+2021-05-13 22:34:21 INFO  SignUp_TestCase:73 - Entering the Password Name
+2021-05-13 22:34:22 INFO  SignUp_TestCase:76 - validation of Password is verified
+2021-05-13 22:34:22 INFO  PageActions:289 - Click On Next Button
+2021-05-13 22:34:22 INFO  PageActions:297 - Click On invite User Link
+2021-05-13 22:34:22 INFO  PageActions:301 -  Freemium Invite User Name Passed
+2021-05-13 22:34:22 INFO  PageActions:305 -  Freemium invite Email Passed
+2021-05-13 22:34:23 INFO  PageActions:309 - Click On Request Inviter Link
+2021-05-13 22:34:23 INFO  SignUp_TestCase:44 -  Closing Browser 
+2021-05-13 22:34:23 INFO  SignUp_TestCase:46 -  @AfterSuite  
+2021-05-13 22:38:19 INFO  SignUp_TestCase:24 -  @BeforeSuite Calling
+2021-05-13 22:38:24 DEBUG SignUp_TestCase:99 - Launching chrome
+2021-05-13 22:38:35 INFO  SignUp_TestCase:30 - Url Launched :https://tipphalcon-test.infinian.team/contents/signup.php
+2021-05-13 22:38:35 INFO  SignUp_TestCase:36 - This is Befor Class
+2021-05-13 22:38:35 INFO  PageActions:277 - Freemium Name Passed
+2021-05-13 22:38:35 INFO  SignUp_TestCase:67 - Entering the User Name
+2021-05-13 22:38:36 INFO  PageActions:281 -  Freemium User email Passed
+2021-05-13 22:38:36 INFO  SignUp_TestCase:70 - Entering the email
+2021-05-13 22:38:36 INFO  PageActions:285 -  Freemium password Passed
+2021-05-13 22:38:36 INFO  SignUp_TestCase:73 - Entering the Password Name
+2021-05-13 22:38:36 INFO  SignUp_TestCase:76 - validation of Password is verified
+2021-05-13 22:38:36 INFO  PageActions:289 - Click On Next Button
+2021-05-13 22:38:36 INFO  PageActions:297 - Click On invite User Link
+2021-05-13 22:38:37 INFO  PageActions:301 -  Freemium Invite User Name Passed
+2021-05-13 22:38:37 INFO  PageActions:305 -  Freemium invite Email Passed
+2021-05-13 22:38:38 INFO  PageActions:309 - Click On Request Inviter Link
+2021-05-13 22:38:38 INFO  SignUp_TestCase:44 -  Closing Browser 
+2021-05-13 22:38:38 INFO  SignUp_TestCase:46 -  @AfterSuite  
+2021-05-13 22:41:05 INFO  SignUp_TestCase:24 -  @BeforeSuite Calling
+2021-05-13 22:41:10 DEBUG SignUp_TestCase:99 - Launching chrome
+2021-05-13 22:41:22 INFO  SignUp_TestCase:30 - Url Launched :https://tipphalcon-test.infinian.team/contents/signup.php
+2021-05-13 22:41:22 INFO  SignUp_TestCase:36 - This is Befor Class
+2021-05-13 22:41:22 INFO  PageActions:277 - Freemium Name Passed
+2021-05-13 22:41:22 INFO  SignUp_TestCase:67 - Entering the User Name
+2021-05-13 22:41:22 INFO  PageActions:281 -  Freemium User email Passed
+2021-05-13 22:41:22 INFO  SignUp_TestCase:70 - Entering the email
+2021-05-13 22:41:23 INFO  PageActions:285 -  Freemium password Passed
+2021-05-13 22:41:23 INFO  SignUp_TestCase:73 - Entering the Password Name
+2021-05-13 22:41:23 INFO  SignUp_TestCase:76 - validation of Password is verified
+2021-05-13 22:41:23 INFO  PageActions:289 - Click On Next Button
+2021-05-13 22:41:24 INFO  PageActions:297 - Click On invite User Link
+2021-05-13 22:41:24 INFO  PageActions:301 -  Freemium Invite User Name Passed
+2021-05-13 22:41:24 INFO  PageActions:305 -  Freemium invite Email Passed
+2021-05-13 22:41:26 INFO  PageActions:309 - Click On Request Inviter Link
+2021-05-13 22:41:26 INFO  SignUp_TestCase:44 -  Closing Browser 
+2021-05-13 22:41:26 INFO  SignUp_TestCase:46 -  @AfterSuite  

@@ -2,50 +2,50 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14496" started-at="2021-05-13T16:53:51Z" finished-at="2021-05-13T16:54:06Z">
+  <suite name="Default suite" duration-ms="13615" started-at="2021-05-13T17:08:24Z" finished-at="2021-05-13T17:08:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14496" started-at="2021-05-13T16:53:51Z" finished-at="2021-05-13T16:54:06Z">
+    <test name="Default test" duration-ms="13615" started-at="2021-05-13T17:08:24Z" finished-at="2021-05-13T17:08:38Z">
       <class name="testcases.SignUp_TestCase">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.SignUp_TestCase@2b2948e2]" name="setUp" is-config="true" duration-ms="6157" started-at="2021-05-13T22:23:45Z" finished-at="2021-05-13T22:23:51Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.SignUp_TestCase@57536d79]" name="setUp" is-config="true" duration-ms="5338" started-at="2021-05-13T22:38:19Z" finished-at="2021-05-13T22:38:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="signUpSetUp()[pri:0, instance:testcases.SignUp_TestCase@2b2948e2]" name="signUpSetUp" is-config="true" duration-ms="11288" started-at="2021-05-13T22:23:51Z" finished-at="2021-05-13T22:24:03Z">
+        <test-method status="PASS" signature="signUpSetUp()[pri:0, instance:testcases.SignUp_TestCase@57536d79]" name="signUpSetUp" is-config="true" duration-ms="10745" started-at="2021-05-13T22:38:24Z" finished-at="2021-05-13T22:38:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpSetUp -->
-        <test-method status="PASS" signature="validationForSignUp()[pri:1, instance:testcases.SignUp_TestCase@2b2948e2]" name="validationForSignUp" duration-ms="1079" started-at="2021-05-13T22:24:03Z" finished-at="2021-05-13T22:24:04Z">
+        <test-method status="PASS" signature="validationForSignUp()[pri:1, instance:testcases.SignUp_TestCase@57536d79]" name="validationForSignUp" duration-ms="1179" started-at="2021-05-13T22:38:35Z" finished-at="2021-05-13T22:38:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validationForSignUp -->
-        <test-method status="PASS" signature="geneareReport(org.testng.ITestResult)[pri:0, instance:testcases.SignUp_TestCase@2b2948e2]" name="geneareReport" is-config="true" duration-ms="5" started-at="2021-05-13T22:24:04Z" finished-at="2021-05-13T22:24:04Z">
+        <test-method status="PASS" signature="geneareReport(org.testng.ITestResult)[pri:0, instance:testcases.SignUp_TestCase@57536d79]" name="geneareReport" is-config="true" duration-ms="4" started-at="2021-05-13T22:38:36Z" finished-at="2021-05-13T22:38:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validationForSignUp status=SUCCESS method=SignUp_TestCase.validationForSignUp()[pri:1, instance:testcases.SignUp_TestCase@2b2948e2] output={null}]]]>
+                <![CDATA[[TestResult name=validationForSignUp status=SUCCESS method=SignUp_TestCase.validationForSignUp()[pri:1, instance:testcases.SignUp_TestCase@57536d79] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- geneareReport -->
-        <test-method status="PASS" signature="validationForInviteUser()[pri:2, instance:testcases.SignUp_TestCase@2b2948e2]" name="validationForInviteUser" duration-ms="2056" started-at="2021-05-13T22:24:04Z" finished-at="2021-05-13T22:24:06Z">
+        <test-method status="PASS" signature="validationForInviteUser()[pri:2, instance:testcases.SignUp_TestCase@57536d79]" name="validationForInviteUser" duration-ms="1578" started-at="2021-05-13T22:38:36Z" finished-at="2021-05-13T22:38:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validationForInviteUser -->
-        <test-method status="PASS" signature="geneareReport(org.testng.ITestResult)[pri:0, instance:testcases.SignUp_TestCase@2b2948e2]" name="geneareReport" is-config="true" duration-ms="0" started-at="2021-05-13T22:24:06Z" finished-at="2021-05-13T22:24:06Z">
+        <test-method status="PASS" signature="geneareReport(org.testng.ITestResult)[pri:0, instance:testcases.SignUp_TestCase@57536d79]" name="geneareReport" is-config="true" duration-ms="0" started-at="2021-05-13T22:38:38Z" finished-at="2021-05-13T22:38:38Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validationForInviteUser status=SUCCESS method=SignUp_TestCase.validationForInviteUser()[pri:2, instance:testcases.SignUp_TestCase@2b2948e2] output={null}]]]>
+                <![CDATA[[TestResult name=validationForInviteUser status=SUCCESS method=SignUp_TestCase.validationForInviteUser()[pri:2, instance:testcases.SignUp_TestCase@57536d79] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- geneareReport -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.SignUp_TestCase@2b2948e2]" name="closeBrowser" is-config="true" duration-ms="1" started-at="2021-05-13T22:24:06Z" finished-at="2021-05-13T22:24:06Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.SignUp_TestCase@57536d79]" name="closeBrowser" is-config="true" duration-ms="1" started-at="2021-05-13T22:38:38Z" finished-at="2021-05-13T22:38:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
