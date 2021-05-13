@@ -25,6 +25,7 @@ public class Common_Login extends Utilities {
 			PageActions.clickOnNextButton();
 			logger.info("waiting for password passing sso page in 10 sec");
 			Thread.sleep(10000);
+			driver.navigate().refresh();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.passwordId)));
 			PageActions.passwordParameter(getFremiumPassword());
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.signInButtonId)));
