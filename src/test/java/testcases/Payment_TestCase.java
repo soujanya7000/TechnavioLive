@@ -62,6 +62,7 @@ public class Payment_TestCase extends BaseClass {
 
 	@BeforeTest
 	public void urlSetUp() throws IOException {
+		driver.manage().deleteAllCookies();
 		driver.get(properties.getProperty("freemiumDevUrl"));
 	}
 
