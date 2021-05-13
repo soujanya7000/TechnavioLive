@@ -13594,3 +13594,28 @@ Driver info: driver.version: unknown
 2021-05-13 18:02:08 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Soujanya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
 2021-05-13 18:02:08 INFO  Login_TestCase:44 -  Closing Browser 
 2021-05-13 18:02:08 INFO  Login_TestCase:46 -  @AfterSuite  
+2021-05-13 18:09:52 INFO  Login_TestCase:24 -  @BeforeSuite Calling
+2021-05-13 18:09:57 DEBUG Login_TestCase:99 - Launching chrome
+2021-05-13 18:10:07 INFO  ExcelReader:33 - Excel sheet opened
+2021-05-13 18:10:07 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-13 18:10:08 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-13 18:10:09 INFO  PageActions:30 -  Freemium User Name Passed
+2021-05-13 18:10:09 INFO  PageActions:25 - Click On Next Button
+2021-05-13 18:10:14 INFO  PageActions:45 - Freemium Password Passed
+2021-05-13 18:10:14 INFO  Login_TestCase:184 -  Password : valid
+2021-05-13 18:10:15 INFO  PageActions:40 -  Click on Sign-In Button
+2021-05-13 18:10:31 INFO  PageActions:85 - Click On admin Icon
+2021-05-13 18:10:32 INFO  PageActions:89 - Logout Sucessfully
+2021-05-13 18:10:33 INFO  Login_TestCase:264 - LogOut Successfully 
+2021-05-13 18:10:33 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2021-05-13 18:10:33 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2021-05-13 18:10:33 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2021-05-13 18:10:33 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2021-05-13 18:10:33 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Soujanya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2021-05-13 18:10:35 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2021-05-13 18:10:35 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2021-05-13 18:10:35 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2021-05-13 18:10:35 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2021-05-13 18:10:35 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Soujanya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2021-05-13 18:10:35 INFO  Login_TestCase:44 -  Closing Browser 
+2021-05-13 18:10:35 INFO  Login_TestCase:46 -  @AfterSuite  
