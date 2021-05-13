@@ -24,7 +24,8 @@ public class Common_Login extends Utilities {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.passwordId)));
 			PageActions.passwordParameter(getFremiumPassword());
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.signInButtonId)));
-			Thread.sleep(2000);
+			Thread.sleep(4000);
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			PageActions.clickOnSignInButton();
 		} catch (Exception e) {
 			throw e;
