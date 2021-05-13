@@ -13766,3 +13766,21 @@ Driver info: driver.version: unknown
 2021-05-13 21:30:42 INFO  PageActions:89 - Logout Sucessfully
 2021-05-13 21:30:42 INFO  Common_Login:44 -  Closing Browser 
 2021-05-13 21:30:42 INFO  Common_Login:46 -  @AfterSuite  
+2021-05-13 22:23:45 INFO  SignUp_TestCase:24 -  @BeforeSuite Calling
+2021-05-13 22:23:51 DEBUG SignUp_TestCase:99 - Launching chrome
+2021-05-13 22:24:02 INFO  SignUp_TestCase:30 - Url Launched :https://tipphalcon-test.infinian.team/contents/signup.php
+2021-05-13 22:24:03 INFO  SignUp_TestCase:36 - This is Befor Class
+2021-05-13 22:24:03 INFO  PageActions:277 - Freemium Name Passed
+2021-05-13 22:24:03 INFO  SignUp_TestCase:67 - Entering the User Name
+2021-05-13 22:24:03 INFO  PageActions:281 -  Freemium User email Passed
+2021-05-13 22:24:03 INFO  SignUp_TestCase:70 - Entering the email
+2021-05-13 22:24:03 INFO  PageActions:285 -  Freemium password Passed
+2021-05-13 22:24:03 INFO  SignUp_TestCase:73 - Entering the Password Name
+2021-05-13 22:24:04 INFO  SignUp_TestCase:76 - validation of Password is verified
+2021-05-13 22:24:04 INFO  PageActions:289 - Click On Next Button
+2021-05-13 22:24:04 INFO  PageActions:297 - Click On invite User Link
+2021-05-13 22:24:04 INFO  PageActions:301 -  Freemium Invite User Name Passed
+2021-05-13 22:24:04 INFO  PageActions:305 -  Freemium invite Email Passed
+2021-05-13 22:24:06 INFO  PageActions:309 - Click On Request Inviter Link
+2021-05-13 22:24:06 INFO  SignUp_TestCase:44 -  Closing Browser 
+2021-05-13 22:24:06 INFO  SignUp_TestCase:46 -  @AfterSuite  
