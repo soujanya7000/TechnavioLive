@@ -19,12 +19,16 @@ public class Common_Login extends Utilities {
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.userId)));
 			actions.userNameParameter(getFreemiumUserName());
+			logger.info("waiting for next button login page in 3 sec");
+			Thread.sleep(3000);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.nextButtonXpath)));
 			PageActions.clickOnNextButton();
+			logger.info("waiting for password passing sso page in 3 sec");
+			Thread.sleep(3000);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.passwordId)));
 			PageActions.passwordParameter(getFremiumPassword());
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.signInButtonId)));
-			logger.info("waiting for sso page in 6 sec");
+			logger.info("waiting for sign button sso page in 6 sec");
 			Thread.sleep(6000);
 			//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			logger.info("wait completed for sso page");
