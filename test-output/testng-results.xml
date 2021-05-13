@@ -2,24 +2,28 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="39591" started-at="2021-05-13T13:57:31Z" finished-at="2021-05-13T13:58:11Z">
+  <suite name="Default suite" duration-ms="42841" started-at="2021-05-13T15:42:06Z" finished-at="2021-05-13T15:42:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="39591" started-at="2021-05-13T13:57:31Z" finished-at="2021-05-13T13:58:11Z">
+    <test name="Default test" duration-ms="42841" started-at="2021-05-13T15:42:06Z" finished-at="2021-05-13T15:42:49Z">
       <class name="testcases.Common_Login">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.Common_Login@eec5a4a]" name="setUp" is-config="true" duration-ms="4183" started-at="2021-05-13T19:27:27Z" finished-at="2021-05-13T19:27:31Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.Common_Login@2b2948e2]" name="setUp" is-config="true" duration-ms="5356" started-at="2021-05-13T21:12:01Z" finished-at="2021-05-13T21:12:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="urlSetUp()[pri:0, instance:testcases.Common_Login@eec5a4a]" name="urlSetUp" is-config="true" duration-ms="9133" started-at="2021-05-13T19:27:31Z" finished-at="2021-05-13T19:27:40Z">
+        <test-method status="PASS" signature="urlSetUp()[pri:0, instance:testcases.Common_Login@2b2948e2]" name="urlSetUp" is-config="true" duration-ms="8949" started-at="2021-05-13T21:12:06Z" finished-at="2021-05-13T21:12:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlSetUp -->
-        <test-method status="PASS" signature="freemiumUserlogin()[pri:0, instance:testcases.Common_Login@eec5a4a]" name="freemiumUserlogin" duration-ms="30420" started-at="2021-05-13T19:27:40Z" finished-at="2021-05-13T19:28:11Z">
+        <test-method status="PASS" signature="freemiumUserlogin()[pri:0, instance:testcases.Common_Login@2b2948e2]" name="freemiumUserlogin" duration-ms="12558" started-at="2021-05-13T21:12:15Z" finished-at="2021-05-13T21:12:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- freemiumUserlogin -->
-        <test-method status="FAIL" signature="closeBrowser()[pri:0, instance:testcases.Common_Login@eec5a4a]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2021-05-13T19:28:11Z" finished-at="2021-05-13T19:28:11Z">
+        <test-method status="PASS" signature="logoutPage()[pri:0, instance:testcases.Common_Login@2b2948e2]" name="logoutPage" is-config="true" duration-ms="21292" started-at="2021-05-13T21:12:28Z" finished-at="2021-05-13T21:12:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutPage -->
+        <test-method status="FAIL" signature="closeBrowser()[pri:0, instance:testcases.Common_Login@2b2948e2]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2021-05-13T21:12:49Z" finished-at="2021-05-13T21:12:49Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException

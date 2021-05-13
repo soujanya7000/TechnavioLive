@@ -39,10 +39,10 @@ public class BaseClass extends Utilities {
 	@AfterSuite
 	public void closeBrowser() throws Exception {
 		//driver.quit();
-		extent.flush();
-		extent.close();
+	/*	extent.flush();
+		extent.close();*/
 		logger.info(" Closing Browser ");
-		extentTest.log(LogStatus.INFO, " Closing Browser");
+		//extentTest.log(LogStatus.INFO, " Closing Browser");
 		logger.info(" @AfterSuite  ");
 	}
 

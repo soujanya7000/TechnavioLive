@@ -55,20 +55,14 @@ public class Common_Login extends BaseClass {
 			logger.info("wait completed for sso page");
 			PageActions.clickOnSignInButton();
 			logger.info("clickOnSignInButton");
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(PageLocators.adminIconClassName)));
-			PageActions.adminIcon();
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(PageLocators.logOutIconClassName)));
-			PageActions.logOut();
 		} catch (Exception e) {
 			throw e;
 		}
 	}
 
-	/*@AfterClass
+	@AfterClass
 	public void logoutPage() throws Exception {
 		try {
-			Thread.sleep(3000);
-			logger.info("waiting for admin icon");
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(PageLocators.adminIconClassName)));
 			PageActions.adminIcon();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(PageLocators.logOutIconClassName)));
@@ -77,6 +71,6 @@ public class Common_Login extends BaseClass {
 		} catch (Exception e) {
 			throw e;
 		}
-	}*/
+	}
 
 }

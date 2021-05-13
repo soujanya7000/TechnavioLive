@@ -13708,3 +13708,61 @@ Driver info: driver.version: unknown
 2021-05-13 19:27:53 INFO  Common_Login:57 - clickOnSignInButton
 2021-05-13 19:28:10 INFO  PageActions:85 - Click On admin Icon
 2021-05-13 19:28:11 INFO  PageActions:89 - Logout Sucessfully
+2021-05-13 19:34:00 INFO  Common_Login:24 -  @BeforeSuite Calling
+2021-05-13 19:34:05 DEBUG Common_Login:99 - Launching chrome
+2021-05-13 19:35:20 INFO  Common_Login:67 - waiting for admin icon
+2021-05-13 21:12:01 INFO  Common_Login:24 -  @BeforeSuite Calling
+2021-05-13 21:12:06 DEBUG Common_Login:99 - Launching chrome
+2021-05-13 21:12:16 INFO  PageActions:30 -  Freemium User Name Passed
+2021-05-13 21:12:16 INFO  Common_Login:39 - waiting for next button login page in 10 sec
+2021-05-13 21:12:17 INFO  PageActions:25 - Click On Next Button
+2021-05-13 21:12:17 INFO  Common_Login:43 - waiting for password passing sso page in 10 sec
+2021-05-13 21:12:22 INFO  PageActions:45 - Freemium Password Passed
+2021-05-13 21:12:22 INFO  Common_Login:52 - waiting for sign button sso page in 6 sec
+2021-05-13 21:12:28 INFO  Common_Login:55 - wait completed for sso page
+2021-05-13 21:12:28 INFO  PageActions:40 -  Click on Sign-In Button
+2021-05-13 21:12:28 INFO  Common_Login:57 - clickOnSignInButton
+2021-05-13 21:12:49 INFO  PageActions:85 - Click On admin Icon
+2021-05-13 21:12:49 INFO  PageActions:89 - Logout Sucessfully
+2021-05-13 21:24:38 INFO  Common_Login:24 -  @BeforeSuite Calling
+2021-05-13 21:24:43 DEBUG Common_Login:99 - Launching chrome
+2021-05-13 21:24:52 INFO  PageActions:30 -  Freemium User Name Passed
+2021-05-13 21:24:52 INFO  Common_Login:39 - waiting for next button login page in 10 sec
+2021-05-13 21:24:53 INFO  PageActions:25 - Click On Next Button
+2021-05-13 21:24:53 INFO  Common_Login:43 - waiting for password passing sso page in 10 sec
+2021-05-13 21:24:59 INFO  PageActions:45 - Freemium Password Passed
+2021-05-13 21:24:59 INFO  Common_Login:52 - waiting for sign button sso page in 6 sec
+2021-05-13 21:25:05 INFO  Common_Login:55 - wait completed for sso page
+2021-05-13 21:25:06 INFO  PageActions:40 -  Click on Sign-In Button
+2021-05-13 21:25:06 INFO  Common_Login:57 - clickOnSignInButton
+2021-05-13 21:25:26 INFO  PageActions:85 - Click On admin Icon
+2021-05-13 21:25:26 INFO  PageActions:89 - Logout Sucessfully
+2021-05-13 21:28:08 INFO  Common_Login:24 -  @BeforeSuite Calling
+2021-05-13 21:28:12 DEBUG Common_Login:99 - Launching chrome
+2021-05-13 21:28:22 INFO  PageActions:30 -  Freemium User Name Passed
+2021-05-13 21:28:22 INFO  Common_Login:39 - waiting for next button login page in 10 sec
+2021-05-13 21:28:22 INFO  PageActions:25 - Click On Next Button
+2021-05-13 21:28:22 INFO  Common_Login:43 - waiting for password passing sso page in 10 sec
+2021-05-13 21:28:28 INFO  PageActions:45 - Freemium Password Passed
+2021-05-13 21:28:28 INFO  Common_Login:52 - waiting for sign button sso page in 6 sec
+2021-05-13 21:28:34 INFO  Common_Login:55 - wait completed for sso page
+2021-05-13 21:28:34 INFO  PageActions:40 -  Click on Sign-In Button
+2021-05-13 21:28:34 INFO  Common_Login:57 - clickOnSignInButton
+2021-05-13 21:28:53 INFO  PageActions:85 - Click On admin Icon
+2021-05-13 21:28:53 INFO  PageActions:89 - Logout Sucessfully
+2021-05-13 21:28:53 INFO  Common_Login:44 -  Closing Browser 
+2021-05-13 21:29:57 INFO  Common_Login:24 -  @BeforeSuite Calling
+2021-05-13 21:30:03 DEBUG Common_Login:99 - Launching chrome
+2021-05-13 21:30:12 INFO  PageActions:30 -  Freemium User Name Passed
+2021-05-13 21:30:12 INFO  Common_Login:39 - waiting for next button login page in 10 sec
+2021-05-13 21:30:12 INFO  PageActions:25 - Click On Next Button
+2021-05-13 21:30:12 INFO  Common_Login:43 - waiting for password passing sso page in 10 sec
+2021-05-13 21:30:18 INFO  PageActions:45 - Freemium Password Passed
+2021-05-13 21:30:18 INFO  Common_Login:52 - waiting for sign button sso page in 6 sec
+2021-05-13 21:30:24 INFO  Common_Login:55 - wait completed for sso page
+2021-05-13 21:30:24 INFO  PageActions:40 -  Click on Sign-In Button
+2021-05-13 21:30:24 INFO  Common_Login:57 - clickOnSignInButton
+2021-05-13 21:30:42 INFO  PageActions:85 - Click On admin Icon
+2021-05-13 21:30:42 INFO  PageActions:89 - Logout Sucessfully
+2021-05-13 21:30:42 INFO  Common_Login:44 -  Closing Browser 
+2021-05-13 21:30:42 INFO  Common_Login:46 -  @AfterSuite  

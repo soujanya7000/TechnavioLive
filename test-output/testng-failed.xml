@@ -8,7 +8,7 @@
           <include name="freemiumUserlogin"/>
           <include name="setUp"/>
           <include name="urlSetUp"/>
-          <include name="closeBrowser"/>
+          <include name="logoutPage"/>
         </methods>
       </class> <!-- testcases.Common_Login -->
     </classes>
