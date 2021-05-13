@@ -63,6 +63,8 @@ public class Common_Login extends BaseClass {
 	@AfterClass
 	public void logoutPage() throws Exception {
 		try {
+			Thread.sleep(3000);
+			logger.info("waiting for admin icon");
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(PageLocators.adminIconClassName)));
 			PageActions.adminIcon();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(PageLocators.logOutIconClassName)));
