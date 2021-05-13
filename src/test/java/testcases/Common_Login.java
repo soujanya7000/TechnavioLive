@@ -55,6 +55,8 @@ public class Common_Login extends BaseClass {
 			logger.info("wait completed for sso page");
 			PageActions.clickOnSignInButton();
 			logger.info("clickOnSignInButton");
+		Thread.sleep(6000);
+		logger.info("wait for admin icon");
 		} catch (Exception e) {
 			throw e;
 		}
