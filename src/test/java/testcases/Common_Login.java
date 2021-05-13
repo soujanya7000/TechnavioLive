@@ -29,9 +29,9 @@ public class Common_Login extends BaseClass {
 			PageActions actions = new PageActions();
 
 			waitState();
-			/*driver.manage().deleteAllCookies();
+			driver.manage().deleteAllCookies();
 			logger.info("Deleted all cookies");
-			hardRefresh();
+			/*hardRefresh();
 			logger.info("Hard refresh");*/
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.userId)));
