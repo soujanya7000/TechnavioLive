@@ -13435,3 +13435,61 @@ Driver info: driver.version: unknown
 2021-05-13 13:55:30 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Soujanya/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
 2021-05-13 13:55:30 INFO  Payment_TestCase:44 -  Closing Browser 
 2021-05-13 13:55:30 INFO  Payment_TestCase:46 -  @AfterSuite  
+2021-05-13 17:23:11 INFO  Payment_TestCase:24 -  @BeforeSuite Calling
+2021-05-13 17:23:18 DEBUG Payment_TestCase:99 - Launching chrome
+2021-05-13 17:23:29 INFO  Payment_TestCase:21 - Deleted all cookies
+2021-05-13 17:23:29 INFO  Payment_TestCase:23 - Hard refresh
+2021-05-13 17:23:30 INFO  PageActions:30 -  Freemium User Name Passed
+2021-05-13 17:23:30 INFO  Payment_TestCase:27 - waiting for next button login page in 10 sec
+2021-05-13 17:23:40 INFO  PageActions:25 - Click On Next Button
+2021-05-13 17:23:40 INFO  Payment_TestCase:31 - waiting for password passing sso page in 10 sec
+2021-05-13 17:23:40 INFO  Payment_TestCase:33 - Hard refresh
+2021-05-13 17:24:08 INFO  Payment_TestCase:24 -  @BeforeSuite Calling
+2021-05-13 17:24:13 DEBUG Payment_TestCase:99 - Launching chrome
+2021-05-13 17:24:25 INFO  Payment_TestCase:21 - Deleted all cookies
+2021-05-13 17:24:26 INFO  Payment_TestCase:23 - Hard refresh
+2021-05-13 17:24:35 INFO  PageActions:30 -  Freemium User Name Passed
+2021-05-13 17:24:35 INFO  Payment_TestCase:27 - waiting for next button login page in 10 sec
+2021-05-13 17:24:45 INFO  PageActions:25 - Click On Next Button
+2021-05-13 17:24:45 INFO  Payment_TestCase:31 - waiting for password passing sso page in 10 sec
+2021-05-13 17:24:45 INFO  Payment_TestCase:33 - Hard refresh
+2021-05-13 17:26:05 INFO  Payment_TestCase:24 -  @BeforeSuite Calling
+2021-05-13 17:26:09 DEBUG Payment_TestCase:99 - Launching chrome
+2021-05-13 17:26:18 INFO  Payment_TestCase:21 - Deleted all cookies
+2021-05-13 17:26:18 INFO  Payment_TestCase:23 - Hard refresh
+2021-05-13 17:26:19 INFO  PageActions:30 -  Freemium User Name Passed
+2021-05-13 17:26:19 INFO  Payment_TestCase:27 - waiting for next button login page in 10 sec
+2021-05-13 17:26:29 INFO  PageActions:25 - Click On Next Button
+2021-05-13 17:26:29 INFO  Payment_TestCase:31 - waiting for password passing sso page in 10 sec
+2021-05-13 17:26:29 INFO  Payment_TestCase:33 - Hard refresh
+2021-05-13 17:26:39 INFO  PageActions:45 - Freemium Password Passed
+2021-05-13 17:26:39 INFO  Payment_TestCase:39 - waiting for sign button sso page in 6 sec
+2021-05-13 17:26:45 INFO  Payment_TestCase:42 - wait completed for sso page
+2021-05-13 17:26:46 INFO  PageActions:40 -  Click on Sign-In Button
+2021-05-13 17:26:46 INFO  Payment_TestCase:44 - clickOnSignInButton
+2021-05-13 17:27:35 INFO  Payment_TestCase:24 -  @BeforeSuite Calling
+2021-05-13 17:27:40 DEBUG Payment_TestCase:99 - Launching chrome
+2021-05-13 17:27:52 INFO  Payment_TestCase:21 - Deleted all cookies
+2021-05-13 17:27:52 INFO  Payment_TestCase:23 - Hard refresh
+2021-05-13 17:28:01 INFO  PageActions:30 -  Freemium User Name Passed
+2021-05-13 17:28:01 INFO  Payment_TestCase:27 - waiting for next button login page in 10 sec
+2021-05-13 17:28:11 INFO  PageActions:25 - Click On Next Button
+2021-05-13 17:28:11 INFO  Payment_TestCase:31 - waiting for password passing sso page in 10 sec
+2021-05-13 17:28:11 INFO  Payment_TestCase:33 - Hard refresh
+2021-05-13 17:29:31 INFO  Payment_TestCase:24 -  @BeforeSuite Calling
+2021-05-13 17:29:35 DEBUG Payment_TestCase:99 - Launching chrome
+2021-05-13 17:29:48 INFO  Payment_TestCase:21 - Deleted all cookies
+2021-05-13 17:29:49 INFO  Payment_TestCase:23 - Hard refresh
+2021-05-13 17:29:59 INFO  PageActions:30 -  Freemium User Name Passed
+2021-05-13 17:29:59 INFO  Payment_TestCase:27 - waiting for next button login page in 10 sec
+2021-05-13 17:30:09 INFO  PageActions:25 - Click On Next Button
+2021-05-13 17:30:09 INFO  Payment_TestCase:31 - waiting for password passing sso page in 10 sec
+2021-05-13 17:30:19 INFO  PageActions:45 - Freemium Password Passed
+2021-05-13 17:30:20 INFO  Payment_TestCase:39 - waiting for sign button sso page in 6 sec
+2021-05-13 17:30:26 INFO  Payment_TestCase:42 - wait completed for sso page
+2021-05-13 17:30:26 INFO  PageActions:40 -  Click on Sign-In Button
+2021-05-13 17:30:26 INFO  Payment_TestCase:44 - clickOnSignInButton
+2021-05-13 17:30:28 INFO  ExcelReader:33 - Excel sheet opened
+2021-05-13 17:30:28 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-13 17:30:28 INFO  Payment_TestCase:60 - This is Before Class
+2021-05-13 17:30:28 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.

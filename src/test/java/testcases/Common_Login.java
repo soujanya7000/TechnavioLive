@@ -29,8 +29,8 @@ public class Common_Login extends Utilities {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.nextButtonXpath)));
 			PageActions.clickOnNextButton();
 			logger.info("waiting for password passing sso page in 10 sec");
-			hardRefresh();
-			logger.info("Hard refresh");
+			/*hardRefresh();
+			logger.info("Hard refresh");*/
 			Thread.sleep(10000);
 			//driver.manage().deleteAllCookies();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.passwordId)));
