@@ -23,8 +23,8 @@ public class Common_Login extends Utilities {
 			Thread.sleep(3000);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.nextButtonXpath)));
 			PageActions.clickOnNextButton();
-			logger.info("waiting for password passing sso page in 3 sec");
-			Thread.sleep(3000);
+			logger.info("waiting for password passing sso page in 6 sec");
+			Thread.sleep(6000);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.passwordId)));
 			PageActions.passwordParameter(getFremiumPassword());
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.signInButtonId)));
