@@ -15,6 +15,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.freemium.base.BaseClass;
@@ -52,12 +53,16 @@ public class Payment_TestCase extends BaseClass {
 			ExcelReader.setExcelFile(getExcelPath() + getTestDataFileName(), "Payment");
 			int iTestCaseRow = ExcelReader.getRowContains(sTestCaseName, Constant.Col_TestCaseName);
 			extentTest = onStart().startTest(sTestCaseName);
-			driver.get(properties.getProperty("freemiumDevUrl"));
 		} catch (Exception e) {
 			captureScreen(driver, "Home_TestCase");
 			Assert.assertFalse(true);
 		}
 		logger.info("This is Before Class");
+	}
+
+	@BeforeTest
+	public void urlSetUp() throws IOException {
+		driver.get(properties.getProperty("freemiumDevUrl"));
 	}
 
 	@Test
@@ -99,7 +104,7 @@ public class Payment_TestCase extends BaseClass {
 
 	@AfterClass
 	public void logOut() throws Exception {
-		// common_Login.logoutPage();
+		common_Login.logoutPage();
 		logger.info("Succesfully logged out");
 		extentTest.log(LogStatus.INFO, "Succesfully logged out");
 	}
@@ -738,6 +743,8 @@ public class Payment_TestCase extends BaseClass {
 				PageActions.toAgreeCheck();
 				logger.info("Click to AgreeCheck");
 				extentTest.log(LogStatus.INFO, "Click to AgreeCheck");
+				PageActions.clickOnCheckOut();
+				logger.info("Click On CheckOut");
 				extentTest.log(LogStatus.INFO, "Click On CheckOut");
 				if (PageLocators.paymentErrorMsg.isDisplayed()) {
 					List<String> errorMsgsList = errorMsgsList();
@@ -752,9 +759,10 @@ public class Payment_TestCase extends BaseClass {
 					}
 
 				} else {
-					logger.info("Return True");
+					/*logger.info("Return True");
 					PageActions.clickOnCheckOut();
-					logger.info("Click On CheckOut");
+					logger.info("Click On CheckOut");*/
+					logger.info("Return True");
 					return true;
 				}
 
@@ -818,6 +826,8 @@ public class Payment_TestCase extends BaseClass {
 		errorMsgsList.add("Your card has insufficient funds.");
 		errorMsgsList.add("Your card was declined.");
 		errorMsgsList.add("Your card's security code is incorrect.");
+		errorMsgsList.add("This value must be greater than or equal to 1.");
+		
 
 		return errorMsgsList;
 
