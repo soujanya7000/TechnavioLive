@@ -70,7 +70,7 @@ public class SignUp_TestCase extends BaseClass {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		// PageActions.clickONSubmit();
 		PageActions.nameParameter(getFremiumName());
-		logger.info("Entering the User Name");
+		logger.info("Entering the User Name1");
 		extentTest.log(LogStatus.INFO, "Username passed    " + getFremiumName());
 		PageActions.emailParameter(getFremiumEmail());
 		logger.info("Entering the email");
