@@ -53,7 +53,12 @@ public class Payment_TestCase extends BaseClass {
 			ExcelReader.setExcelFile(getExcelPath() + getTestDataFileName(), "Payment");
 			int iTestCaseRow = ExcelReader.getRowContains(sTestCaseName, Constant.Col_TestCaseName);
 			//extentTest = onStart().startTest(sTestCaseName);
-		} catch (Exception e) {
+		} catch (TimeoutException e) {
+			extentTest.log(LogStatus.FAIL, " Taking more time to Load Page (TimeoutException ) ");
+			logger.info(" Taking more time to Load Page (TimeoutException ) ");
+			captureScreen(driver, sTestCaseName);
+			Assert.assertFalse(true);
+		}catch (Exception e) {
 			captureScreen(driver, "Home_TestCase");
 			logger.info(" Logins Fails :: " + PageLocators.useriderr.getText());
 			extentTest.log(LogStatus.FAIL, " Logins Fails :: " + PageLocators.useriderr.getText());
