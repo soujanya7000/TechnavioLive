@@ -16,10 +16,10 @@ public class Common_Login extends Utilities {
 			PageActions actions = new PageActions();
 
 			waitState();
-			driver.manage().deleteAllCookies();
+			/*driver.manage().deleteAllCookies();
 			logger.info("Deleted all cookies");
 			hardRefresh();
-			logger.info("Hard refresh");
+			logger.info("Hard refresh");*/
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.userId)));
 			actions.userNameParameter(getFreemiumUserName());
@@ -32,16 +32,14 @@ public class Common_Login extends Utilities {
 			 * 
 			 * }
 			 */
-			/*
-			 * logger.info("hard refresh waiting for password passing sso page in 1min");
-			 * Thread.sleep(100000); hardRefresh(); logger.info("Hard refresh"); logger.
-			 * info("after hard refresh waiting for password passing sso page in 1min");
-			 */
-			logger.info("after hard refresh waiting for password passing sso page in 1min");
-			 Thread.sleep(100000);
+			//logger.info("after hard refresh waiting for password passing sso page in 1min");
+			logger.info("waiting for next button login page in 2min");
+			 Thread.sleep(200000);
 			// driver.manage().deleteAllCookies();
 			//wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.passwordId)));
-			PageActions.passwordParameter(getFremiumPassword());
+			 String pwd =getFremiumPassword();
+			 logger.info("passing pwd :: "+pwd);
+			PageActions.passwordParameter(pwd);
 			// wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.signInButtonId)));
 			logger.info("waiting for sign button sso page in 6 sec");
 			Thread.sleep(100000);

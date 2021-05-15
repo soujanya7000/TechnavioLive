@@ -22,9 +22,12 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -82,9 +85,15 @@ public class Utilities {
 
 		return destination;
 	}
+	
 
 	public WebDriver OpenBrowser() throws Exception {
 		try {
+			DesiredCapabilities dc= new DesiredCapabilities();
+			dc.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
+			dc.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+			ChromeOptions coptions= new ChromeOptions();
+			coptions.merge(dc);
 			String browserName = getBrowserName();
 			if (browserName.equals("firefox")) {
 				System.setProperty("webdriver.gecko.driver",
@@ -95,7 +104,7 @@ public class Utilities {
 				System.setProperty("webdriver.chrome.driver",
 						System.getProperty("user.dir") + Constant.ChromeDriver_path);
 
-				driver = new ChromeDriver();
+				driver = new ChromeDriver(coptions);
 				logger.debug("Launching chrome");
 			} else if (browserName.equals("edge")) {
 				System.setProperty("webdriver.Edge.driver", System.getProperty("user.dir") + Constant.EdgeDriver_path);
