@@ -14228,3 +14228,90 @@ Driver info: driver.version: unknown
 2021-05-15 13:22:15 INFO  Payment_TestCase:80 - destination : C:\Users\Soujanya\git\TechnavioLive\src\test\resources\Screenshots\Home_TestCase20210515012215.png
 2021-05-15 13:22:15 INFO  Payment_TestCase:81 - Screen Shot Taken Home_TestCase
 2021-05-15 13:22:15 INFO  Payment_TestCase:58 -  Logins Fails :: There are currently multiple sessions logged in with this username and password. Please logout other sessions or try after sometime.
+2021-05-15 17:00:13 INFO  Payment_TestCase:24 -  @BeforeSuite Calling
+2021-05-15 17:00:18 DEBUG Payment_TestCase:107 - Launching chrome
+2021-05-15 17:00:28 INFO  PageActions:30 -  Freemium User Name Passed
+2021-05-15 17:00:28 INFO  Payment_TestCase:30 - waiting for next button login page in 1min
+2021-05-15 17:02:08 INFO  PageActions:25 - Click On Next Button
+2021-05-15 17:02:08 INFO  Payment_TestCase:41 - waiting for next button login page in 5 sec
+2021-05-15 17:02:32 INFO  Payment_TestCase:82 - NoSuchElementException :: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Sorry! We could')] | //*[@class="alert alert-danger p-1"]"}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'IRL-197', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Soujanya\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57199}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6e04ce93903ed9854e57a187dabaee5b
+*** Element info: {Using=xpath, value=//*[contains(text(),'Sorry! We could')] | //*[@class="alert alert-danger p-1"]}
+2021-05-15 17:02:32 INFO  Payment_TestCase:57 - NoSuchElementException :: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Sorry! We could')] | //*[@class="alert alert-danger p-1"]"}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'IRL-197', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\Soujanya\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57199}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6e04ce93903ed9854e57a187dabaee5b
+*** Element info: {Using=xpath, value=//*[contains(text(),'Sorry! We could')] | //*[@class="alert alert-danger p-1"]}
+2021-05-15 17:02:33 INFO  Payment_TestCase:83 - destination : C:\Users\Soujanya\git\TechnavioLive\src\test\resources\Screenshots\Home_TestCase20210515050232.png
+2021-05-15 17:02:33 INFO  Payment_TestCase:84 - Screen Shot Taken Home_TestCase
+2021-05-15 17:04:24 INFO  Payment_TestCase:24 -  @BeforeSuite Calling
+2021-05-15 17:04:28 DEBUG Payment_TestCase:107 - Launching chrome
+2021-05-15 17:04:39 INFO  PageActions:30 -  Freemium User Name Passed
+2021-05-15 17:04:39 INFO  Payment_TestCase:30 - waiting for next button login page in 1min
+2021-05-15 17:04:58 INFO  PageActions:25 - Click On Next Button
+2021-05-15 17:05:02 INFO  Payment_TestCase:41 - waiting for next button login page in 5 sec
+2021-05-15 17:06:18 INFO  Payment_TestCase:24 -  @BeforeSuite Calling
+2021-05-15 17:06:22 DEBUG Payment_TestCase:107 - Launching chrome
+2021-05-15 17:06:31 INFO  PageActions:30 -  Freemium User Name Passed
+2021-05-15 17:06:31 INFO  Payment_TestCase:30 - waiting for next button login page in 1min
+2021-05-15 17:07:06 INFO  PageActions:25 - Click On Next Button
+2021-05-15 17:07:15 INFO  Payment_TestCase:41 - waiting for next button login page in 5 sec
+2021-05-15 17:09:42 INFO  Payment_TestCase:24 -  @BeforeSuite Calling
+2021-05-15 17:09:47 DEBUG Payment_TestCase:107 - Launching chrome
+2021-05-15 17:09:57 INFO  PageActions:30 -  Freemium User Name Passed
+2021-05-15 17:09:57 INFO  Payment_TestCase:30 - waiting for next button login page in 1min
+2021-05-15 17:10:03 INFO  PageActions:25 - Click On Next Button
+2021-05-15 17:10:04 INFO  Payment_TestCase:41 - waiting for next button login page in 5 sec
+2021-05-15 17:11:43 INFO  Payment_TestCase:24 -  @BeforeSuite Calling
+2021-05-15 17:11:47 DEBUG Payment_TestCase:107 - Launching chrome
+2021-05-15 17:12:01 INFO  PageActions:30 -  Freemium User Name Passed
+2021-05-15 17:12:01 INFO  Payment_TestCase:30 - waiting for next button login page in 1min
+2021-05-15 17:12:12 INFO  PageActions:25 - Click On Next Button
+2021-05-15 17:12:15 INFO  Payment_TestCase:41 - waiting for next button login page in 5 sec
+2021-05-15 17:12:39 INFO  Payment_TestCase:55 - sso page visible :: Sign In - SSO
+2021-05-15 17:12:43 INFO  Payment_TestCase:59 - Entering pwd :: 
+2021-05-15 17:15:28 INFO  Payment_TestCase:24 -  @BeforeSuite Calling
+2021-05-15 17:15:33 DEBUG Payment_TestCase:107 - Launching chrome
+2021-05-15 17:15:41 INFO  PageActions:30 -  Freemium User Name Passed
+2021-05-15 17:15:41 INFO  Payment_TestCase:30 - waiting for next button login page in 1min
+2021-05-15 17:15:47 INFO  PageActions:25 - Click On Next Button
+2021-05-15 17:15:48 INFO  Payment_TestCase:41 - waiting for next button login page in 5 sec
+2021-05-15 17:16:06 INFO  Payment_TestCase:55 - sso page visible :: Sign In - SSO
+2021-05-15 17:16:07 INFO  Payment_TestCase:59 - Entering pwd :: 
+2021-05-15 17:21:01 INFO  Payment_TestCase:24 -  @BeforeSuite Calling
+2021-05-15 17:21:06 DEBUG Payment_TestCase:107 - Launching chrome
+2021-05-15 17:21:15 INFO  PageActions:30 -  Freemium User Name Passed
+2021-05-15 17:21:15 INFO  Payment_TestCase:30 - waiting for next button login page in 1min
+2021-05-15 17:21:23 INFO  PageActions:25 - Click On Next Button
+2021-05-15 17:21:23 INFO  Payment_TestCase:41 - waiting for next button login page in 5 sec
+2021-05-15 17:21:41 INFO  Payment_TestCase:55 - sso page visible :: Sign In - SSO
+2021-05-15 17:21:45 INFO  Payment_TestCase:59 - Entering pwd :: 
+2021-05-15 17:28:45 INFO  Payment_TestCase:24 -  @BeforeSuite Calling
+2021-05-15 17:28:49 DEBUG Payment_TestCase:107 - Launching chrome
+2021-05-15 17:29:00 INFO  PageActions:30 -  Freemium User Name Passed
+2021-05-15 17:29:00 INFO  Payment_TestCase:30 - waiting for next button login page in 1min
+2021-05-15 17:29:06 INFO  PageActions:25 - Click On Next Button
+2021-05-15 17:29:08 INFO  Payment_TestCase:41 - waiting for next button login page in 5 sec
+2021-05-15 17:29:29 INFO  Payment_TestCase:55 - sso page visible :: Sign In - SSO
+2021-05-15 17:29:30 INFO  Payment_TestCase:59 - Entering pwd :: 
+2021-05-15 17:31:53 INFO  Payment_TestCase:24 -  @BeforeSuite Calling
+2021-05-15 17:31:58 DEBUG Payment_TestCase:107 - Launching chrome
+2021-05-15 17:32:07 INFO  PageActions:30 -  Freemium User Name Passed
+2021-05-15 17:32:07 INFO  Payment_TestCase:30 - waiting for next button login page in 1min
+2021-05-15 17:32:12 INFO  PageActions:25 - Click On Next Button
+2021-05-15 17:32:16 INFO  Payment_TestCase:41 - waiting for next button login page in 5 sec
+2021-05-15 17:32:33 INFO  Payment_TestCase:55 - sso page visible :: Sign In - SSO
+2021-05-15 17:32:35 INFO  Payment_TestCase:59 - Entering pwd :: 
+2021-05-15 17:32:44 INFO  Payment_TestCase:61 - Entered pwd :: 
+2021-05-15 17:32:46 INFO  Payment_TestCase:64 - waiting for sign button sso page in 6 sec
+2021-05-15 17:32:53 INFO  Payment_TestCase:67 - wait completed for sso page

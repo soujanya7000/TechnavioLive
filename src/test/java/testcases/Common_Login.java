@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 
@@ -18,7 +19,6 @@ public class Common_Login extends Utilities {
 	public void freemiumUserlogin() throws Exception {
 		try {
 			PageActions actions = new PageActions();
-
 			waitState();
 			/*
 			 * driver.manage().deleteAllCookies(); logger.info("Deleted all cookies");
@@ -28,8 +28,8 @@ public class Common_Login extends Utilities {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.userId)));
 			actions.userNameParameter(getFreemiumUserName());
 			logger.info("waiting for next button login page in 1min");
-			Thread.sleep(100000);
-			// wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.nextButtonXpath)));
+			//Thread.sleep(100000);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.nextButtonXpath)));
 			PageActions.clickOnNextButton();
 			/*
 			 * if (PageLocators.useriderr.isDisplayed()) {
@@ -39,29 +39,39 @@ public class Common_Login extends Utilities {
 			// logger.info("after hard refresh waiting for password passing sso page in
 			// 1min");
 			logger.info("waiting for next button login page in 5 sec");
-			Thread.sleep(5000);
+			Thread.sleep(10000);
 			// driver.manage().deleteAllCookies();
 			// wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.passwordId)));
-			if (PageLocators.useriderr.isDisplayed()) {
+			/*if (PageLocators.useriderr.isDisplayed()) {
 				logger.info(PageLocators.useriderr.getText());
+				Assert.fail();
+				
 			} else {
 				logger.info("waiting for next button login page in 2min");
-				Thread.sleep(20000);
+				Thread.sleep(2000);
+			}*/
+				
 				if (PageLocators.ssoPage.isDisplayed()) {
 					logger.info("sso page visible :: " + PageLocators.ssoPage.getText());
-					String pwd = getFremiumPassword();
+					/*String pwd = getFremiumPassword();
 					logger.info("passing pwd :: " + pwd);
-					PageActions.passwordParameter(pwd);
+					WebElement pwds =PageLocators.pwid;*/
+					logger.info("Entering pwd :: ");
+					Thread.sleep(10000);
+					pwdJavaScript();
+					logger.info("Entered pwd :: ");
+					//PageActions.passwordParameter(pwd);
 					// wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.signInButtonId)));
 					logger.info("waiting for sign button sso page in 6 sec");
-					Thread.sleep(100000);
+					Thread.sleep(10000);
 					// driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 					logger.info("wait completed for sso page");
-					PageActions.clickOnSignInButton();
+					clickJavaScript();
+					//PageActions.clickOnSignInButton();
 					logger.info("clickOnSignInButton");
 				}
 
-			}
+			
 			/*
 			 * String pwd =getFremiumPassword(); logger.info("passing pwd :: "+pwd);
 			 * PageActions.passwordParameter(pwd); //
