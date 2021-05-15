@@ -156,9 +156,11 @@ public class PageLocators {// During Wait state locators
     @FindBy(how = How.XPATH, using = "//*[contains(@class,'alert alert-success')]/p")
     public static WebElement sucessInvite;
     
+    @FindBy(how = How.XPATH, using = "//*[text()='Sign In - SSO']")
+    public static WebElement ssoPage;
     
     
-    
+  
     
     
     
