@@ -38,10 +38,10 @@ public class Common_Login extends Utilities {
 			 */
 			// logger.info("after hard refresh waiting for password passing sso page in
 			// 1min");
-			logger.info("waiting for next button login page in 5 sec");
-			Thread.sleep(10000);
+			logger.info("waiting for next button login page ");
+		//	Thread.sleep(10000);
 			// driver.manage().deleteAllCookies();
-			// wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.passwordId)));
+			 
 			/*if (PageLocators.useriderr.isDisplayed()) {
 				logger.info(PageLocators.useriderr.getText());
 				Assert.fail();
@@ -57,13 +57,14 @@ public class Common_Login extends Utilities {
 					logger.info("passing pwd :: " + pwd);
 					WebElement pwds =PageLocators.pwid;*/
 					logger.info("Entering pwd :: ");
-					Thread.sleep(10000);
+					wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.passwordId)));
+					//Thread.sleep(10000);
 					pwdJavaScript();
 					logger.info("Entered pwd :: ");
 					//PageActions.passwordParameter(pwd);
-					// wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.signInButtonId)));
-					logger.info("waiting for sign button sso page in 6 sec");
-					Thread.sleep(10000);
+					 wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.signInButtonId)));
+					//logger.info("waiting for sign button sso page in 6 sec");
+					//Thread.sleep(10000);
 					// driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 					logger.info("wait completed for sso page");
 					clickJavaScript();

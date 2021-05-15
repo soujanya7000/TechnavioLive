@@ -86,7 +86,7 @@ public class Payment_TestCase extends BaseClass {
 
 		try {
 			logger.info("waiting for latest reports tab 1min");
-			Thread.sleep(10000);
+			Thread.sleep(50000);
 			logger.info("wait completed for latest reports tab 1min");
 			rowCount = ExcelReader.getRowUsed();
 			for (iTestCaseRow = 1; iTestCaseRow <= rowCount; iTestCaseRow++) {
