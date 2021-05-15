@@ -52,9 +52,11 @@ public class Payment_TestCase extends BaseClass {
 			sTestCaseName = getTestCaseName(this.toString());
 			ExcelReader.setExcelFile(getExcelPath() + getTestDataFileName(), "Payment");
 			int iTestCaseRow = ExcelReader.getRowContains(sTestCaseName, Constant.Col_TestCaseName);
-			extentTest = onStart().startTest(sTestCaseName);
+			//extentTest = onStart().startTest(sTestCaseName);
 		} catch (Exception e) {
 			captureScreen(driver, "Home_TestCase");
+			logger.info(" Logins Fails :: " + PageLocators.useriderr.getText());
+			extentTest.log(LogStatus.FAIL, " Logins Fails :: " + PageLocators.useriderr.getText());
 			Assert.assertFalse(true);
 		}
 		logger.info("This is Before Class");
@@ -63,6 +65,7 @@ public class Payment_TestCase extends BaseClass {
 	@BeforeTest
 	public void urlSetUp() throws IOException {
 		driver.manage().deleteAllCookies();
+		extentTest = onStart().startTest(sTestCaseName);
 		driver.get(properties.getProperty("freemiumDevUrl"));
 	}
 

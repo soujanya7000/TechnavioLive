@@ -27,19 +27,25 @@ public class Common_Login extends Utilities {
 			Thread.sleep(100000);
 			//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.nextButtonXpath)));
 			PageActions.clickOnNextButton();
-			logger.info("hard refresh waiting for password passing sso page in 1min");
-			Thread.sleep(100000);
-			hardRefresh();
-			logger.info("Hard refresh");
+			/*
+			 * if (PageLocators.useriderr.isDisplayed()) {
+			 * 
+			 * }
+			 */
+			/*
+			 * logger.info("hard refresh waiting for password passing sso page in 1min");
+			 * Thread.sleep(100000); hardRefresh(); logger.info("Hard refresh"); logger.
+			 * info("after hard refresh waiting for password passing sso page in 1min");
+			 */
 			logger.info("after hard refresh waiting for password passing sso page in 1min");
-			Thread.sleep(100000);
-			//driver.manage().deleteAllCookies();
+			 Thread.sleep(100000);
+			// driver.manage().deleteAllCookies();
 			//wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.passwordId)));
 			PageActions.passwordParameter(getFremiumPassword());
-			//wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.signInButtonId)));
+			// wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.signInButtonId)));
 			logger.info("waiting for sign button sso page in 6 sec");
 			Thread.sleep(100000);
-			//driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			// driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			logger.info("wait completed for sso page");
 			PageActions.clickOnSignInButton();
 			logger.info("clickOnSignInButton");
