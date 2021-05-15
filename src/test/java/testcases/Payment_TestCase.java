@@ -53,14 +53,17 @@ public class Payment_TestCase extends BaseClass {
 			ExcelReader.setExcelFile(getExcelPath() + getTestDataFileName(), "Payment");
 			int iTestCaseRow = ExcelReader.getRowContains(sTestCaseName, Constant.Col_TestCaseName);
 			//extentTest = onStart().startTest(sTestCaseName);
-		} catch (NoSuchElementException e) {
-			logger.info("NoSuchElementException");
+		} catch (NoSuchElementException ne) {
+			logger.info("NoSuchElementException :: " + ne);
+			captureScreen(driver, "Home_TestCase");
 			Assert.assertFalse(true);
-		} catch (TimeoutException e) {
-			logger.info("TimeoutException");
+		} catch (TimeoutException te) {
+			logger.info("TimeoutException :: " + te);
+			captureScreen(driver, "Home_TestCase");
 			Assert.assertFalse(true);
-		} catch (StaleElementReferenceException e) {
-			logger.info("StaleElementReferenceException");
+		} catch (StaleElementReferenceException se) {
+			logger.info("StaleElementReferenceException :: " + se);
+			captureScreen(driver, "Home_TestCase");
 			Assert.assertFalse(true);
 		}catch (Exception e) {
 			captureScreen(driver, "Home_TestCase");
