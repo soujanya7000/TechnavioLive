@@ -70,7 +70,9 @@ public class Payment_TestCase extends BaseClass {
 	public void validatePaymentSection() throws IOException {
 
 		try {
-			
+			logger.info("waiting for latest reports tab 1min");
+			Thread.sleep(100000);
+			logger.info("wait completed for latest reports tab 1min");
 			rowCount = ExcelReader.getRowUsed();
 			for (iTestCaseRow = 1; iTestCaseRow <= rowCount; iTestCaseRow++) {
 				paymentMode = ExcelReader.getCellData(iTestCaseRow, Constant.Col_PaymentMode);
