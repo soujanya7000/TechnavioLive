@@ -3,7 +3,11 @@ package testcases;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
 
 import com.freemium.pageactions.PageActions;
 import com.freemium.pagelocators.PageLocators;
@@ -37,7 +41,23 @@ public class Common_Login extends Utilities {
 			 Thread.sleep(200000);
 			// driver.manage().deleteAllCookies();
 			//wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.passwordId)));
-			 String pwd =getFremiumPassword();
+			 if( PageLocators.useriderr.isDisplayed())
+			 {
+				logger.info(PageLocators.useriderr.getText()); 
+			 } else {
+				 String pwd =getFremiumPassword();
+				 logger.info("passing pwd :: "+pwd);
+				PageActions.passwordParameter(pwd);
+				// wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.signInButtonId)));
+				logger.info("waiting for sign button sso page in 6 sec");
+				Thread.sleep(100000);
+				// driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+				logger.info("wait completed for sso page");
+				PageActions.clickOnSignInButton();
+				logger.info("clickOnSignInButton");
+				 
+			 }
+			 /*String pwd =getFremiumPassword();
 			 logger.info("passing pwd :: "+pwd);
 			PageActions.passwordParameter(pwd);
 			// wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.signInButtonId)));
@@ -46,7 +66,16 @@ public class Common_Login extends Utilities {
 			// driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			logger.info("wait completed for sso page");
 			PageActions.clickOnSignInButton();
-			logger.info("clickOnSignInButton");
+			logger.info("clickOnSignInButton");*/
+		}catch (NoSuchElementException ne) {
+			logger.info("NoSuchElementException :: " + ne);
+			throw ne;
+		} catch (TimeoutException te) {
+			logger.info("TimeoutException :: " + te);
+			throw te;
+		} catch (StaleElementReferenceException se) {
+			logger.info("StaleElementReferenceException :: " + se);
+			throw se;
 		} catch (Exception e) {
 			throw e;
 		}
