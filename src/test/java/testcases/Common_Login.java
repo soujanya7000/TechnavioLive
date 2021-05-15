@@ -23,13 +23,15 @@ public class Common_Login extends Utilities {
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.userId)));
 			actions.userNameParameter(getFreemiumUserName());
-			logger.info("waiting for next button login page in 10 sec");
+			logger.info("waiting for next button login page in 1min");
 			Thread.sleep(100000);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.nextButtonXpath)));
+			//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.nextButtonXpath)));
 			PageActions.clickOnNextButton();
-			logger.info("waiting for password passing sso page in 10 sec");
-			/*hardRefresh();
-			logger.info("Hard refresh");*/
+			logger.info("hard refresh waiting for password passing sso page in 1min");
+			Thread.sleep(100000);
+			hardRefresh();
+			logger.info("Hard refresh");
+			logger.info("after hard refresh waiting for password passing sso page in 1min");
 			Thread.sleep(100000);
 			//driver.manage().deleteAllCookies();
 			//wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.passwordId)));
