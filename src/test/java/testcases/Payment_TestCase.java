@@ -67,8 +67,8 @@ public class Payment_TestCase extends BaseClass {
 			Assert.assertFalse(true);
 		}catch (Exception e) {
 			captureScreen(driver, "Home_TestCase");
-			logger.info(" Logins Fails :: " + PageLocators.useriderr.getText());
-			extentTest.log(LogStatus.FAIL, " Logins Fails :: " + PageLocators.useriderr.getText());
+			logger.info(" Logins Fails :: " + e );
+			extentTest.log(LogStatus.FAIL, " Logins Fails :: " + e);
 			Assert.assertFalse(true);
 		}
 		logger.info("This is Before Class");
