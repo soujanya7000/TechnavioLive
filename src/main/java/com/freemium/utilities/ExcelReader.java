@@ -26,7 +26,7 @@ public class ExcelReader {
 	public static void setExcelFile(String Path, String SheetName) throws Exception {
 		try {
 			// Open the Excel file
-			FileInputStream ExcelFile = new FileInputStream(Path);
+			FileInputStream ExcelFile = new FileInputStream(System.getProperty("user.dir")+Path);
 			// Access the required test data sheet
 			ExcelWBook = new XSSFWorkbook(ExcelFile);
 			ExcelWSheet = ExcelWBook.getSheet(SheetName);
