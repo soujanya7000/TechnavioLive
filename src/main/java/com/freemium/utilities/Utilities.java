@@ -193,6 +193,11 @@ public class Utilities {
 		JavascriptExecutor java =(JavascriptExecutor) driver;
 		java.executeScript("arguments[0].click();",ClickonIcon);
 		}
+	public void javaClickOnUpgrade() {
+		WebElement ClickonUpgrade=PageLocators.upgrade;
+		JavascriptExecutor java =(JavascriptExecutor) driver;
+		java.executeScript("arguments[0].click();",ClickonUpgrade);
+		}
 
 	public static void hardRefresh() throws Exception {
 		Robot r = new Robot();

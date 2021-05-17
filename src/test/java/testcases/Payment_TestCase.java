@@ -140,7 +140,8 @@ public class Payment_TestCase extends BaseClass {
 			wait.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath(PageLocators.waitForlatestTabReportsfaIcon)));
 			Thread.sleep(1500);
-			PageActions.clickOnUpgradeButton2();
+			javaClickOnUpgrade();
+			//PageActions.clickOnUpgradeButton2();
 			logger.info("wait complete for click upgrade button");
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.waitForFAQLink)));
 			logger.info("wait complete for FAQ Link");
