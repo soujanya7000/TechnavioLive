@@ -203,6 +203,21 @@ public class Utilities {
 		JavascriptExecutor java =(JavascriptExecutor) driver;
 		java.executeScript("arguments[0].click();",Clickoncontinue1);
 		}
+	public void javaClickOnAdmin() {
+		WebElement ClickonAdmin= PageLocators.adminicon;
+		JavascriptExecutor java =(JavascriptExecutor) driver;
+		java.executeScript("arguments[0].click();",ClickonAdmin);
+		}
+	public void javaClickOnMyAccount() {
+		WebElement ClickonMyAccount=  PageLocators.myAccountDetails;
+		JavascriptExecutor java =(JavascriptExecutor) driver;
+		java.executeScript("arguments[0].click();",ClickonMyAccount);
+		}
+	public void javaClickOnsubscriptionHistory() {
+		WebElement ClickonSubscriptionHistory= PageLocators.subscriptionHistory;
+		JavascriptExecutor java =(JavascriptExecutor) driver;
+		java.executeScript("arguments[0].click();",ClickonSubscriptionHistory);
+		}
 
 	public static void hardRefresh() throws Exception {
 		Robot r = new Robot();

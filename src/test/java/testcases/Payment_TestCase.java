@@ -189,15 +189,19 @@ public class Payment_TestCase extends BaseClass {
 				// Thread.sleep(7000);
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.waitForThankYouMsg)));
 				if (PageLocators.thankYouMessage.getText().equalsIgnoreCase("Thank You For Your Payment!")) {
-					PageActions.adminIcon();
-					PageActions.ClickOnMyAccountDetails();
+					javaClickOnAdmin();
+					logger.info("Click On Admin Icon");
+					//PageActions.adminIcon();
+					javaClickOnMyAccount();
+					//PageActions.ClickOnMyAccountDetails();
 					logger.info("Click On MyAccountDetails");
 					extentTest.log(LogStatus.INFO, "Click On MyAccountDetails");
 					// Thread.sleep(5000);
 					wait.until(ExpectedConditions
 							.visibilityOfElementLocated(By.xpath(PageLocators.waitForSubscriptionHistory)));
 					Thread.sleep(1500);
-					PageActions.ClickOnSubcriptionHistory();
+					javaClickOnsubscriptionHistory();
+					//PageActions.ClickOnSubcriptionHistory();
 					logger.info("Click On Subcription History");
 					extentTest.log(LogStatus.INFO, "Click On Subcription History");
 					List<WebElement> subcriptionHistoryList = PageLocators.subcriptionHistoryList;
