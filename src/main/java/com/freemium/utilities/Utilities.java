@@ -181,6 +181,10 @@ public class Utilities {
 		JavascriptExecutor java =(JavascriptExecutor) driver;
 		java.executeScript("arguments[0].click();",buttons);
 		}
+	public void sendkeys(WebElement sendkeys) {
+		JavascriptExecutor java =(JavascriptExecutor) driver;
+		java.executeScript("arguments[0].value;",sendkeys);
+		}
 	public void actions() {
 		Actions action = new Actions(driver);
 	}

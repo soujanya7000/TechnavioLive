@@ -9,6 +9,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -255,8 +256,10 @@ public class Payment_TestCase extends BaseClass {
 				if (!cartIconStatus.equalsIgnoreCase("fa fa-shopping-cart add-to-cart  cart-added")) {
 					wait.until(ExpectedConditions
 							.visibilityOfElementLocated(By.xpath(PageLocators.waitForlatestTabReportsCartIcon)));
-					WebElement cartIconButton=cartIcons.get(i);
-                    buttonToClick(cartIconButton);
+					Actions a=new Actions(driver);
+					a.click(cartIcons.get(i)).perform();
+					/*WebElement cartIconButton=cartIcons.get(i);
+                    buttonToClick(cartIconButton);*/
                     logger.info("report cart icon clicked");
 					//cartIcons.get(i).click();
 					logger.info("reportName  :  : " + reportName);
@@ -266,7 +269,11 @@ public class Payment_TestCase extends BaseClass {
 						wait.until(ExpectedConditions
 								.invisibilityOfElementLocated(By.xpath(PageLocators.waitForCartAddErrorMsg)));
 						logger.info("waitForlatestTabGoToCartIcon  Completed");
-						PageActions.goToCartPage();
+						WebElement ClickonIcon= PageLocators.goToIcon;
+						a.click(ClickonIcon).perform();
+						//buttonToClick(ClickonIcon);
+						logger.info(" Click on go to cart page");
+						//PageActions.goToCartPage();
 						logger.info("goToCartPage  Completed");
 						if (isReportNamePresentCartPage(reportName)) {
 						}
@@ -281,7 +288,7 @@ public class Payment_TestCase extends BaseClass {
 				} else {
 					WebElement ClickonIcon= PageLocators.goToIcon;
 					buttonToClick(ClickonIcon);
-					logger.info(" Click on go to icon");
+					logger.info(" Click on go to cart page");
 					//PageActions.goToCartPage();
 					wait.until(
 							ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.waitForReportsCart)));
@@ -470,6 +477,7 @@ public class Payment_TestCase extends BaseClass {
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.waitForStepButton2)));
 				// Thread.sleep(3000);
 				scrollToElementContinueStep2();
+				
 				PageActions.clickOnContinueStep2();
 				logger.info("Click On Billing info Continue");
 				extentTest.log(LogStatus.INFO, "Click On Billing info Continue");
