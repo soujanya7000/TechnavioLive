@@ -287,8 +287,7 @@ public class Payment_TestCase extends BaseClass {
 						Assert.assertEquals(actualMsg, "CartAddErrorMessage");
 					}
 				} else {
-					WebElement ClickonIcon= PageLocators.goToIcon;
-					buttonToClick(ClickonIcon);
+					javaClickGoToIcon();
 					logger.info(" Click on go to cart page");
 					//PageActions.goToCartPage();
 					wait.until(
@@ -647,10 +646,13 @@ public class Payment_TestCase extends BaseClass {
 			if (PageLocators.litePlan.getText().equals(technavioSubscriptionPaln)) {
 
 				PageActions.goToLitePlanPage();
+				logger.info("click on lite plan");
 			} else if (PageLocators.basicPlan.getText().equals(technavioSubscriptionPaln)) {
 				PageActions.goToBasicPlanPage();
+				logger.info("click on Basic plan");
 			} else if (PageLocators.teamsPlan.getText().equals(technavioSubscriptionPaln)) {
 				PageActions.goToTeamsPlanPage();
+				logger.info("click on Teams plan");
 			}
 		}
 	}
