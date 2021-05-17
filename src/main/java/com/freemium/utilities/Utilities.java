@@ -188,6 +188,11 @@ public class Utilities {
 	public void actions() {
 		Actions action = new Actions(driver);
 	}
+	public void javaClickGoToIcon() {
+		WebElement ClickonIcon= PageLocators.goToIcon;
+		JavascriptExecutor java =(JavascriptExecutor) driver;
+		java.executeScript("arguments[0].click();",ClickonIcon);
+		}
 
 	public static void hardRefresh() throws Exception {
 		Robot r = new Robot();

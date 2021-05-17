@@ -269,9 +269,10 @@ public class Payment_TestCase extends BaseClass {
 						wait.until(ExpectedConditions
 								.invisibilityOfElementLocated(By.xpath(PageLocators.waitForCartAddErrorMsg)));
 						logger.info("waitForlatestTabGoToCartIcon  Completed");
-						WebElement ClickonIcon= PageLocators.goToIcon;
-						a.click(ClickonIcon).perform();
+						//WebElement ClickonIcon= PageLocators.goToIcon;
+					//	a.click(ClickonIcon).perform();
 						//buttonToClick(ClickonIcon);
+						javaClickGoToIcon();
 						logger.info(" Click on go to cart page");
 						//PageActions.goToCartPage();
 						logger.info("goToCartPage  Completed");
