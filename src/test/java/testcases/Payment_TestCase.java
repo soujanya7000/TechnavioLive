@@ -279,7 +279,10 @@ public class Payment_TestCase extends BaseClass {
 						Assert.assertEquals(actualMsg, "CartAddErrorMessage");
 					}
 				} else {
-					PageActions.goToCartPage();
+					WebElement ClickonIcon= PageLocators.goToIcon;
+					buttonToClick(ClickonIcon);
+					logger.info(" Click on go to icon");
+					//PageActions.goToCartPage();
 					wait.until(
 							ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.waitForReportsCart)));
 					if (isReportNamePresentCartPage(reportName)) {
