@@ -150,7 +150,8 @@ public class Payment_TestCase extends BaseClass {
 			// Thread.sleep(5000);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.waitForStepButton1)));
 			scrollToElementContinueStep1();
-			PageActions.clickOnContinueStep1();
+			javaClickOncontinue1();
+			//PageActions.clickOnContinueStep1();
 			logger.info("Click On Subscription Continue");
 			extentTest.log(LogStatus.INFO, "Click On Subscription Continue");
 			rowCount = ExcelReader.getRowUsed();
@@ -162,6 +163,7 @@ public class Payment_TestCase extends BaseClass {
 			// Thread.sleep(3000);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.waitForStepButton2)));
 			scrollToElementContinueStep2();
+			logger.info("scroll to continue2Button");
 			PageActions.clickOnContinueStep2();
 			logger.info("Click On Billing info Continue");
 			extentTest.log(LogStatus.INFO, "Click On Billing info Continue");
