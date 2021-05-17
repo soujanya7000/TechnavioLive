@@ -177,7 +177,10 @@ public class Utilities {
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("arguments[0].click();",click);
 	}
-
+	public void buttonToClick(WebElement buttons) {
+		JavascriptExecutor java =(JavascriptExecutor) driver;
+		java.executeScript("arguments[0].click();",buttons);
+		}
 	public void actions() {
 		Actions action = new Actions(driver);
 	}

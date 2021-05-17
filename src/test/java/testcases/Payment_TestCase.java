@@ -51,6 +51,7 @@ public class Payment_TestCase extends BaseClass {
 			sTestCaseName = this.toString();
 			sTestCaseName = getTestCaseName(this.toString());
 			ExcelReader.setExcelFile(getExcelPath() + getTestDataFileName(), "Payment");
+			logger.info("succesfully invoke excel file path");
 			int iTestCaseRow = ExcelReader.getRowContains(sTestCaseName, Constant.Col_TestCaseName);
 			//extentTest = onStart().startTest(sTestCaseName);
 		} catch (NoSuchElementException ne) {
@@ -254,7 +255,10 @@ public class Payment_TestCase extends BaseClass {
 				if (!cartIconStatus.equalsIgnoreCase("fa fa-shopping-cart add-to-cart  cart-added")) {
 					wait.until(ExpectedConditions
 							.visibilityOfElementLocated(By.xpath(PageLocators.waitForlatestTabReportsCartIcon)));
-					cartIcons.get(i).click();
+					WebElement cartIconButton=cartIcons.get(i);
+                    buttonToClick(cartIconButton);
+                    logger.info("report cart icon clicked");
+					//cartIcons.get(i).click();
 					logger.info("reportName  :  : " + reportName);
 					if (isCartMessageDisplay()) {
 						actualMsg = PageLocators.productAddedcart.getText();
@@ -325,7 +329,10 @@ public class Payment_TestCase extends BaseClass {
 				if (!cartIconStatus.equalsIgnoreCase("fa fa-shopping-cart add-to-cart  cart-added")) {
 					wait.until(ExpectedConditions
 							.visibilityOfElementLocated(By.xpath(PageLocators.waitForlatestTabReportsCartIcon)));
-					cartIcons.get(i).click();
+					WebElement cartIconButton=cartIcons.get(i);
+                    buttonToClick(cartIconButton);
+                    logger.info("report cart icon clicked");
+					//cartIcons.get(i).click();
 					logger.info("reportName  :  : " + reportName);
 					if (isCartMessageDisplay()) {
 						actualMsg = PageLocators.productAddedcart.getText();
