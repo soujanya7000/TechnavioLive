@@ -164,14 +164,18 @@ public class Payment_TestCase extends BaseClass {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.waitForStepButton2)));
 			scrollToElementContinueStep2();
 			logger.info("scroll to continue2Button");
-			PageActions.clickOnContinueStep2();
+			javaClickOnContinueStep2();
+			logger.info("Click on continue2Button");
+			//PageActions.clickOnContinueStep2();
 			logger.info("Click On Billing info Continue");
 			extentTest.log(LogStatus.INFO, "Click On Billing info Continue");
 			if (!validateBillingsection()) {
 				setBillingInformation(technavioCardAddress, technavioCardCity);
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.waitForStepButton2)));
 				scrollToElementContinueStep2();
-				PageActions.clickOnContinueStep2();
+				javaClickOnContinueStep2();
+				//logger.info("Click on continue2Button");
+				//PageActions.clickOnContinueStep2();
 				logger.info("Click On Billing info Continue");
 				extentTest.log(LogStatus.INFO, "Click On Billing info Continue");
 			} else {

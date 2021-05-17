@@ -198,6 +198,11 @@ public class Utilities {
 		JavascriptExecutor java =(JavascriptExecutor) driver;
 		java.executeScript("arguments[0].click();",ClickonUpgrade);
 		}
+	public void javaClickOnContinueStep2() {
+		WebElement ClickonContinueStep2=PageLocators.ContinueStep2;
+		JavascriptExecutor java =(JavascriptExecutor) driver;
+		java.executeScript("arguments[0].click();",ClickonContinueStep2);
+		}
 	public void javaClickOncontinue1() {
 		WebElement Clickoncontinue1=PageLocators.ContinueStep1;
 		JavascriptExecutor java =(JavascriptExecutor) driver;
