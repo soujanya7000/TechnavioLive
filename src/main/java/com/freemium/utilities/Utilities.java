@@ -208,6 +208,11 @@ public class Utilities {
 		JavascriptExecutor java =(JavascriptExecutor) driver;
 		java.executeScript("arguments[0].click();",ClickonAdmin);
 		}
+	public void javaClickOnLogout() {
+		WebElement ClickonLogout= PageLocators.logout;
+		JavascriptExecutor java =(JavascriptExecutor) driver;
+		java.executeScript("arguments[0].click();",ClickonLogout);
+		}
 	public void javaClickOnMyAccount() {
 		WebElement ClickonMyAccount=  PageLocators.myAccountDetails;
 		JavascriptExecutor java =(JavascriptExecutor) driver;

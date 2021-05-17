@@ -99,9 +99,13 @@ public class Common_Login extends Utilities {
 	public void logoutPage() throws Exception {
 		try {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(PageLocators.adminIconClassName)));
+			javaClickOnAdmin();
+			logger.info("click on admin icon for logout");
 			PageActions.adminIcon();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(PageLocators.logOutIconClassName)));
-			PageActions.logOut();
+			javaClickOnLogout();
+			//PageActions.logOut();
+			logger.info("click on logout");
 
 		} catch (Exception e) {
 			throw e;
