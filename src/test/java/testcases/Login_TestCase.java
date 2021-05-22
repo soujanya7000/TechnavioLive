@@ -77,11 +77,13 @@ public class Login_TestCase extends BaseClass {
 
 			for (iTestCaseRow = 1; iTestCaseRow <= rowCount; iTestCaseRow++) {
 				try {
+					logger.info("Entered in the try block");
 					technavioUserName = ExcelReader.getCellData(iTestCaseRow, Constant.Col_UserName);
 					technavioPassword = ExcelReader.getCellData(iTestCaseRow, Constant.Col_Password);
 					technavioUserNameCriteria = ExcelReader.getCellData(iTestCaseRow, Constant.Col_UserName_Criteria);
+					logger.info("Waiting for user feild");
 					wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.userId)));
-					actions.userNameParameter(technavioUserName);
+					PageActions.userNameParameter(technavioUserName);
 					extentTest.log(LogStatus.INFO, "Username passed    " + technavioUserName);
 					wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.nextButtonXpath)));
 					PageActions.clickOnNextButton();
