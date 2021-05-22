@@ -89,9 +89,9 @@ public class PageLocators {// During Wait state locators
     
     
     // Logout Page Locators
-    @FindBy(how = How.CLASS_NAME, using = "admin-avatar")
+    @FindBy(how = How.XPATH, using = "(//*[@class='fa fa-user-circle user_icon'])[1]")
     public static WebElement adminicon;
-    @FindBy(how = How.CLASS_NAME, using = "drop-bottom")
+    @FindBy(how = How.XPATH, using = "(//*[@class='drop setting active'])[2]/child::span/a")
     public static WebElement logout;
     
     //Home page Locators

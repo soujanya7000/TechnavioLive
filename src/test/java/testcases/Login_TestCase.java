@@ -36,6 +36,7 @@ public class Login_TestCase extends BaseClass {
 			iTestCaseRow = ExcelReader.getRowContains(sTestCaseName, Constant.Col_TestCaseName);
 			//driver.get(properties.getProperty("freemiumDevUrl"));
 			extentTest = onStart().startTest(sTestCaseName);
+			 extentTest=extent.startTest("loginValidations");
 		} catch (Exception e) {
 			logger.error(e);
 			e.printStackTrace();
@@ -58,7 +59,7 @@ public class Login_TestCase extends BaseClass {
 
 	@Test
 	public void loginValidations() throws Exception {
-		extentTest=extent.startTest("loginValidations");
+        extentTest=extent.startTest("loginValidations");
 		PageActions actions =new PageActions();
 		String technavioUserName = null;
 		String technavioUserNameCriteria = null;
@@ -299,10 +300,10 @@ public class Login_TestCase extends BaseClass {
 
 		try {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(PageLocators.adminIconClassName)));
-			PageActions.adminIcon();
+			PageActions.clickOnAdminIcon();
 			extentTest.log(LogStatus.INFO, "Click on Admin Icon");
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(PageLocators.logOutIconClassName)));
-			PageActions.logOut();
+			PageActions.clickOnLogout();
 			extentTest.log(LogStatus.INFO, "Successfull LogOut");
 			return true;
 

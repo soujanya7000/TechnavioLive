@@ -24,11 +24,39 @@ public static void clickOnNextButton() throws Exception {
       PageLocators.useridnext.click();
       log.info("Click On Next Button");
 }
-
-public  void userNameParameter(String userName) throws Exception {
-      PageLocators.userid.sendKeys(userName);
-      log.info(" Freemium User Name Passed");
+public static void clickSignInButton() {
+    WebElement element=PageLocators.pwdnext;
+    JavascriptExecutor js =(JavascriptExecutor) driver;
+    js.executeScript("arguments[0].click();", element);
 }
+public static void clickOnNextButton1() {
+    WebElement element=PageLocators.useridnext;
+    JavascriptExecutor js =(JavascriptExecutor) driver;
+    js.executeScript("arguments[0].click();", element);
+}
+public static void  passwordParameter(String ssoPassword) {
+    WebElement element1 =PageLocators.pwid;
+    JavascriptExecutor java =(JavascriptExecutor) driver;
+    java.executeScript("arguments[0].value"+"="+"'"+ ssoPassword +"'"+";",element1);
+}
+
+public static void  userNameParameter(String ssoPassword) {
+    WebElement element1 =PageLocators.userid;
+    JavascriptExecutor java =(JavascriptExecutor) driver;
+    java.executeScript("arguments[0].value"+"="+"'"+ ssoPassword +"'"+";",element1);
+}
+
+public static void clickOnAdminIcon() {
+    WebElement element=PageLocators.adminicon;
+    JavascriptExecutor js =(JavascriptExecutor) driver;
+    js.executeScript("arguments[0].click();", element);
+}
+public static void clickOnLogout() {
+    WebElement clickOnelement=PageLocators.logout;
+    JavascriptExecutor js =(JavascriptExecutor) driver;
+    js.executeScript("arguments[0].click();", clickOnelement);
+}
+
 
 public static void userFieldClear() {
       PageLocators.userid.clear();
@@ -40,10 +68,6 @@ public static void clickOnSignInButton() {
       log.info(" Click on Sign-In Button");
 }
 
-public static void passwordParameter(String ssoPassword) throws Exception {
-      PageLocators.pwid.sendKeys(ssoPassword);
-      log.info("Freemium Password Passed");
-}
 
 public static void passwordFieldclear() {
       PageLocators.pwid.clear();

@@ -14315,3 +14315,183 @@ Session ID: 6e04ce93903ed9854e57a187dabaee5b
 2021-05-15 17:32:44 INFO  Payment_TestCase:61 - Entered pwd :: 
 2021-05-15 17:32:46 INFO  Payment_TestCase:64 - waiting for sign button sso page in 6 sec
 2021-05-15 17:32:53 INFO  Payment_TestCase:67 - wait completed for sso page
+2021-05-22 19:54:33 INFO  Login_TestCase:24 -  @BeforeSuite Calling
+2021-05-22 19:54:38 DEBUG Login_TestCase:107 - Launching chrome
+2021-05-22 19:54:39 INFO  ExcelReader:33 - Excel sheet opened
+2021-05-22 19:54:39 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 19:54:45 INFO  Login_TestCase:49 - Url Launched :https://tipphalcon-test.infinian.team/contents/login.php
+2021-05-22 19:54:45 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 19:54:46 INFO  PageActions:64 -  Freemium User Name clear
+2021-05-22 19:54:46 INFO  Login_TestCase:88 - User Email :: avzgd@gurumail.xyz
+2021-05-22 19:54:47 INFO  Login_TestCase:301 - Invalid Message Displyed :Invalid Email Address!
+2021-05-22 19:54:47 INFO  Login_TestCase:44 -  Closing Browser 
+2021-05-22 19:54:47 INFO  Login_TestCase:46 -  @AfterSuite  
+2021-05-22 19:56:06 INFO  Login_TestCase:24 -  @BeforeSuite Calling
+2021-05-22 19:56:10 DEBUG Login_TestCase:107 - Launching chrome
+2021-05-22 19:56:12 INFO  ExcelReader:33 - Excel sheet opened
+2021-05-22 19:56:12 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 19:56:13 INFO  Login_TestCase:49 - Url Launched :https://tipphalcon-dev.infinian.team/contents/login.php
+2021-05-22 19:56:13 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 20:01:14 INFO  Login_TestCase:24 -  @BeforeSuite Calling
+2021-05-22 20:01:19 DEBUG Login_TestCase:107 - Launching chrome
+2021-05-22 20:01:20 INFO  ExcelReader:33 - Excel sheet opened
+2021-05-22 20:01:20 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 20:01:22 INFO  Login_TestCase:49 - Url Launched :https://tipphalcon-dev.infinian.team/contents/login.php
+2021-05-22 20:01:22 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 20:01:54 INFO  Login_TestCase:83 - destination : C:\Users\Soujanya\git\TechnavioLive\src\test\resources\Screenshots\loginValidations20210522080153.png
+2021-05-22 20:01:54 INFO  Login_TestCase:84 - Screen Shot Taken loginValidations
+2021-05-22 20:01:54 INFO  Login_TestCase:44 -  Closing Browser 
+2021-05-22 20:01:54 INFO  Login_TestCase:46 -  @AfterSuite  
+2021-05-22 20:03:23 INFO  Login_TestCase:24 -  @BeforeSuite Calling
+2021-05-22 20:03:27 DEBUG Login_TestCase:107 - Launching chrome
+2021-05-22 20:03:29 INFO  ExcelReader:33 - Excel sheet opened
+2021-05-22 20:03:29 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 20:03:35 INFO  Login_TestCase:49 - Url Launched :https://tipphalcon-dev.infinian.team/contents/login.php
+2021-05-22 20:03:35 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 20:03:36 INFO  PageActions:64 -  Freemium User Name clear
+2021-05-22 20:03:36 INFO  Login_TestCase:88 - User Email :: avzgd@gurumail.xyz
+2021-05-22 20:03:43 INFO  Login_TestCase:196 -  Password : valid
+2021-05-22 20:04:33 INFO  Login_TestCase:83 - destination : C:\Users\Soujanya\git\TechnavioLive\src\test\resources\Screenshots\Login_TestCase20210522080432.png
+2021-05-22 20:04:33 INFO  Login_TestCase:84 - Screen Shot Taken Login_TestCase
+2021-05-22 20:04:33 INFO  Login_TestCase:331 - LogOut failed
+2021-05-22 20:04:33 INFO  Login_TestCase:83 - destination : C:\Users\Soujanya\git\TechnavioLive\src\test\resources\Screenshots\loginValidations20210522080433.png
+2021-05-22 20:04:33 INFO  Login_TestCase:84 - Screen Shot Taken loginValidations
+2021-05-22 20:04:33 INFO  Login_TestCase:44 -  Closing Browser 
+2021-05-22 20:04:33 INFO  Login_TestCase:46 -  @AfterSuite  
+2021-05-22 20:07:57 INFO  Login_TestCase:24 -  @BeforeSuite Calling
+2021-05-22 20:08:01 DEBUG Login_TestCase:107 - Launching chrome
+2021-05-22 20:08:02 INFO  ExcelReader:33 - Excel sheet opened
+2021-05-22 20:08:02 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 20:08:08 INFO  Login_TestCase:49 - Url Launched :https://tipphalcon-dev.infinian.team/contents/login.php
+2021-05-22 20:08:08 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 20:08:08 INFO  PageActions:63 -  Freemium User Name clear
+2021-05-22 20:08:08 INFO  Login_TestCase:88 - User Email :: avzgd@gurumail.xyz
+2021-05-22 20:08:13 INFO  Login_TestCase:196 -  Password : valid
+2021-05-22 20:09:00 INFO  Login_TestCase:83 - destination : C:\Users\Soujanya\git\TechnavioLive\src\test\resources\Screenshots\Login_TestCase20210522080859.png
+2021-05-22 20:09:00 INFO  Login_TestCase:84 - Screen Shot Taken Login_TestCase
+2021-05-22 20:09:00 INFO  Login_TestCase:331 - LogOut failed
+2021-05-22 20:09:00 INFO  Login_TestCase:83 - destination : C:\Users\Soujanya\git\TechnavioLive\src\test\resources\Screenshots\loginValidations20210522080900.png
+2021-05-22 20:09:00 INFO  Login_TestCase:84 - Screen Shot Taken loginValidations
+2021-05-22 20:09:00 INFO  Login_TestCase:44 -  Closing Browser 
+2021-05-22 20:09:00 INFO  Login_TestCase:46 -  @AfterSuite  
+2021-05-22 20:17:44 INFO  Login_TestCase:24 -  @BeforeSuite Calling
+2021-05-22 20:17:49 DEBUG Login_TestCase:107 - Launching chrome
+2021-05-22 20:17:52 INFO  ExcelReader:33 - Excel sheet opened
+2021-05-22 20:17:52 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 20:18:00 INFO  Login_TestCase:49 - Url Launched :https://tipphalcon-dev.infinian.team/contents/login.php
+2021-05-22 20:18:00 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 20:18:01 INFO  PageActions:63 -  Freemium User Name clear
+2021-05-22 20:18:01 INFO  Login_TestCase:88 - User Email :: avzgd@gurumail.xyz
+2021-05-22 20:18:06 INFO  Login_TestCase:196 -  Password : valid
+2021-05-22 20:18:23 INFO  Login_TestCase:282 - LogOut Successfully 
+2021-05-22 20:18:23 INFO  Login_TestCase:44 -  Closing Browser 
+2021-05-22 20:18:23 INFO  Login_TestCase:46 -  @AfterSuite  
+2021-05-22 20:20:24 INFO  Login_TestCase:24 -  @BeforeSuite Calling
+2021-05-22 20:20:30 DEBUG Login_TestCase:107 - Launching chrome
+2021-05-22 20:20:31 INFO  ExcelReader:33 - Excel sheet opened
+2021-05-22 20:20:31 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 20:20:37 INFO  Login_TestCase:49 - Url Launched :https://tipphalcon-dev.infinian.team/contents/login.php
+2021-05-22 20:20:37 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 20:20:37 INFO  PageActions:63 -  Freemium User Name clear
+2021-05-22 20:20:38 INFO  Login_TestCase:88 - User Email :: avzgd@gurumail.xyz
+2021-05-22 20:20:44 INFO  Login_TestCase:196 -  Password : valid
+2021-05-22 20:21:00 INFO  Login_TestCase:282 - LogOut Successfully 
+2021-05-22 20:21:00 INFO  Login_TestCase:44 -  Closing Browser 
+2021-05-22 20:21:00 INFO  Login_TestCase:46 -  @AfterSuite  
+2021-05-22 20:22:31 INFO  Login_TestCase:24 -  @BeforeSuite Calling
+2021-05-22 20:22:36 DEBUG Login_TestCase:107 - Launching chrome
+2021-05-22 20:22:38 INFO  ExcelReader:33 - Excel sheet opened
+2021-05-22 20:22:38 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 20:22:43 INFO  Login_TestCase:49 - Url Launched :https://tipphalcon-dev.infinian.team/contents/login.php
+2021-05-22 20:22:44 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 20:22:44 INFO  PageActions:63 -  Freemium User Name clear
+2021-05-22 20:22:44 INFO  Login_TestCase:88 - User Email :: avzgd@gurumail.xyz
+2021-05-22 20:22:49 INFO  Login_TestCase:196 -  Password : valid
+2021-05-22 20:23:07 INFO  Login_TestCase:282 - LogOut Successfully 
+2021-05-22 20:23:07 INFO  Login_TestCase:44 -  Closing Browser 
+2021-05-22 20:23:07 INFO  Login_TestCase:46 -  @AfterSuite  
+2021-05-22 20:28:34 INFO  Login_TestCase:24 -  @BeforeSuite Calling
+2021-05-22 20:28:40 DEBUG Login_TestCase:107 - Launching chrome
+2021-05-22 20:28:50 INFO  ExcelReader:33 - Excel sheet opened
+2021-05-22 20:28:50 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 20:28:51 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 20:28:52 INFO  PageActions:25 - Click On Next Button
+2021-05-22 20:28:58 INFO  Login_TestCase:184 -  Password : valid
+2021-05-22 20:28:58 INFO  PageActions:68 -  Click on Sign-In Button
+2021-05-22 20:29:14 INFO  PageActions:109 - Click On admin Icon
+2021-05-22 20:29:16 INFO  Login_TestCase:83 - destination : C:\Users\Soujanya\git\TechnavioLive\src\test\resources\Screenshots\Login_TestCase20210522082915.png
+2021-05-22 20:29:16 INFO  Login_TestCase:84 - Screen Shot Taken Login_TestCase
+2021-05-22 20:29:16 INFO  Login_TestCase:312 - LogOut failed
+2021-05-22 20:29:16 INFO  Login_TestCase:83 - destination : C:\Users\Soujanya\git\TechnavioLive\src\test\resources\Screenshots\loginValidations20210522082916.png
+2021-05-22 20:29:16 INFO  Login_TestCase:84 - Screen Shot Taken loginValidations
+2021-05-22 20:29:16 INFO  Login_TestCase:44 -  Closing Browser 
+2021-05-22 20:29:16 INFO  Login_TestCase:46 -  @AfterSuite  
+2021-05-22 20:35:11 INFO  Login_TestCase:24 -  @BeforeSuite Calling
+2021-05-22 20:35:15 DEBUG Login_TestCase:107 - Launching chrome
+2021-05-22 20:35:23 INFO  ExcelReader:33 - Excel sheet opened
+2021-05-22 20:35:23 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 20:37:14 INFO  Login_TestCase:24 -  @BeforeSuite Calling
+2021-05-22 20:37:19 DEBUG Login_TestCase:107 - Launching chrome
+2021-05-22 20:37:26 INFO  ExcelReader:33 - Excel sheet opened
+2021-05-22 20:37:26 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 20:37:27 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 20:37:27 INFO  PageActions:25 - Click On Next Button
+2021-05-22 20:37:33 INFO  Login_TestCase:184 -  Password : valid
+2021-05-22 20:37:34 INFO  PageActions:68 -  Click on Sign-In Button
+2021-05-22 20:37:49 INFO  PageActions:109 - Click On admin Icon
+2021-05-22 20:37:50 INFO  Login_TestCase:83 - destination : C:\Users\Soujanya\git\TechnavioLive\src\test\resources\Screenshots\Login_TestCase20210522083750.png
+2021-05-22 20:37:50 INFO  Login_TestCase:84 - Screen Shot Taken Login_TestCase
+2021-05-22 20:37:50 INFO  Login_TestCase:312 - LogOut failed
+2021-05-22 20:37:50 INFO  Login_TestCase:83 - destination : C:\Users\Soujanya\git\TechnavioLive\src\test\resources\Screenshots\loginValidations20210522083750.png
+2021-05-22 20:37:50 INFO  Login_TestCase:84 - Screen Shot Taken loginValidations
+2021-05-22 20:37:50 INFO  Login_TestCase:44 -  Closing Browser 
+2021-05-22 20:37:50 INFO  Login_TestCase:46 -  @AfterSuite  
+2021-05-22 20:42:42 INFO  Login_TestCase:24 -  @BeforeSuite Calling
+2021-05-22 20:42:47 DEBUG Login_TestCase:107 - Launching chrome
+2021-05-22 20:42:55 INFO  ExcelReader:33 - Excel sheet opened
+2021-05-22 20:42:55 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 20:42:55 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 20:42:55 INFO  PageActions:25 - Click On Next Button
+2021-05-22 20:42:59 INFO  Login_TestCase:184 -  Password : valid
+2021-05-22 20:43:00 INFO  PageActions:68 -  Click on Sign-In Button
+2021-05-22 20:43:15 INFO  PageActions:109 - Click On admin Icon
+2021-05-22 20:43:16 INFO  Login_TestCase:83 - destination : C:\Users\Soujanya\git\TechnavioLive\src\test\resources\Screenshots\Login_TestCase20210522084316.png
+2021-05-22 20:43:16 INFO  Login_TestCase:84 - Screen Shot Taken Login_TestCase
+2021-05-22 20:43:16 INFO  Login_TestCase:312 - LogOut failed
+2021-05-22 20:43:17 INFO  Login_TestCase:83 - destination : C:\Users\Soujanya\git\TechnavioLive\src\test\resources\Screenshots\loginValidations20210522084316.png
+2021-05-22 20:43:17 INFO  Login_TestCase:84 - Screen Shot Taken loginValidations
+2021-05-22 20:43:17 INFO  Login_TestCase:44 -  Closing Browser 
+2021-05-22 20:43:17 INFO  Login_TestCase:46 -  @AfterSuite  
+2021-05-22 20:48:44 INFO  Login_TestCase:24 -  @BeforeSuite Calling
+2021-05-22 20:48:50 DEBUG Login_TestCase:107 - Launching chrome
+2021-05-22 20:48:57 INFO  ExcelReader:33 - Excel sheet opened
+2021-05-22 20:48:57 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 20:48:57 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 20:48:57 INFO  PageActions:25 - Click On Next Button
+2021-05-22 20:49:04 INFO  Login_TestCase:185 -  Password : valid
+2021-05-22 20:49:05 INFO  PageActions:68 -  Click on Sign-In Button
+2021-05-22 20:49:22 INFO  Login_TestCase:265 - LogOut Successfully 
+2021-05-22 20:49:22 INFO  Login_TestCase:44 -  Closing Browser 
+2021-05-22 20:49:22 INFO  Login_TestCase:46 -  @AfterSuite  
+2021-05-22 20:51:27 INFO  Login_TestCase:24 -  @BeforeSuite Calling
+2021-05-22 20:51:33 DEBUG Login_TestCase:107 - Launching chrome
+2021-05-22 20:51:41 INFO  ExcelReader:33 - Excel sheet opened
+2021-05-22 20:51:41 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 20:51:41 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 20:51:42 INFO  PageActions:25 - Click On Next Button
+2021-05-22 20:51:46 INFO  Login_TestCase:185 -  Password : valid
+2021-05-22 20:51:47 INFO  PageActions:68 -  Click on Sign-In Button
+2021-05-22 20:52:02 INFO  Login_TestCase:265 - LogOut Successfully 
+2021-05-22 20:52:02 INFO  Login_TestCase:44 -  Closing Browser 
+2021-05-22 20:52:02 INFO  Login_TestCase:46 -  @AfterSuite  
+2021-05-22 20:53:31 INFO  Login_TestCase:24 -  @BeforeSuite Calling
+2021-05-22 20:53:34 DEBUG Login_TestCase:107 - Launching chrome
+2021-05-22 20:53:42 INFO  ExcelReader:33 - Excel sheet opened
+2021-05-22 20:53:42 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 20:53:42 INFO  ExcelReader:98 - Total number of Row used return as < 1 >.
+2021-05-22 20:53:42 INFO  PageActions:25 - Click On Next Button
+2021-05-22 20:53:48 INFO  Login_TestCase:185 -  Password : valid
+2021-05-22 20:53:49 INFO  PageActions:68 -  Click on Sign-In Button
+2021-05-22 20:54:04 INFO  Login_TestCase:265 - LogOut Successfully 
+2021-05-22 20:54:04 INFO  Login_TestCase:44 -  Closing Browser 
+2021-05-22 20:54:04 INFO  Login_TestCase:46 -  @AfterSuite  
