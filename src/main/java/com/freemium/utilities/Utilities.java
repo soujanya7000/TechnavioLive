@@ -256,7 +256,7 @@ public class Utilities {
 	public ExtentReports onStart() {
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());// time stamp
 		String reportName = "Technavio_ExtentReport-" + timeStamp + ".html";
-		extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/" + reportName, true);
+		extent = new ExtentReports(System.getProperty("user.dir") + "\\src\\test\\resources\\tnlreports\\" + reportName, true);
 		extent.addSystemInfo("Host Name", "Technavio Live Phalcon");
 		extent.addSystemInfo("User Name", "QA Automation");
 		extent.addSystemInfo("Environment", "Test server");
