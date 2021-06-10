@@ -23,6 +23,7 @@ public class SignUp_TestCase extends BaseClass {
 	@BeforeClass
 	public void signUpSetUp() throws IOException {
 		try {
+			//signup
 			sTestCaseName = this.toString();
 			sTestCaseName = getTestCaseName(this.toString());
 			extentTest = onStart().startTest(sTestCaseName);
