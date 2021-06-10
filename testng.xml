@@ -3,11 +3,11 @@
 <suite name="Suite">
 	<test name="Test">
 		<classes>
-			<class name="testcases.Login_TestCase" />
+			<!-- <class name="testcases.Login_TestCase" /> -->
 			<!-- <class name="testcases.Common_Login"/> -->
 			<!-- <class name="testcases.Home_TestCase"/> -->
 			<!-- <class name="testcases.Payment_TestCase" /> -->
-			<!-- <class name="testcases.SignUp_TestCase" /> -->
+			<class name="testcases.SignUp_TestCase" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

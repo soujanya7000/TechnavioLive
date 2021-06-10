@@ -14495,3 +14495,21 @@ Session ID: 6e04ce93903ed9854e57a187dabaee5b
 2021-05-22 20:54:04 INFO  Login_TestCase:265 - LogOut Successfully 
 2021-05-22 20:54:04 INFO  Login_TestCase:44 -  Closing Browser 
 2021-05-22 20:54:04 INFO  Login_TestCase:46 -  @AfterSuite  
+2021-06-10 19:59:48 INFO  SignUp_TestCase:24 -  @BeforeSuite Calling
+2021-06-10 19:59:54 DEBUG SignUp_TestCase:107 - Launching chrome
+2021-06-10 20:00:02 INFO  SignUp_TestCase:30 - Url Launched :https://tipphalcon-test.infinian.team/contents/signup.php
+2021-06-10 20:00:02 INFO  SignUp_TestCase:36 - This is Befor Class
+2021-06-10 20:00:03 INFO  PageActions:301 - Freemium Name Passed
+2021-06-10 20:00:03 INFO  SignUp_TestCase:67 - Entering the User Name
+2021-06-10 20:00:03 INFO  PageActions:305 -  Freemium User email Passed
+2021-06-10 20:00:03 INFO  SignUp_TestCase:70 - Entering the email
+2021-06-10 20:00:03 INFO  PageActions:309 -  Freemium password Passed
+2021-06-10 20:00:03 INFO  SignUp_TestCase:73 - Entering the Password Name
+2021-06-10 20:00:03 INFO  SignUp_TestCase:76 - validation of Password is verified
+2021-06-10 20:00:03 INFO  PageActions:313 - Click On Next Button
+2021-06-10 20:00:03 INFO  PageActions:321 - Click On invite User Link
+2021-06-10 20:00:04 INFO  PageActions:325 -  Freemium Invite User Name Passed
+2021-06-10 20:00:04 INFO  PageActions:329 -  Freemium invite Email Passed
+2021-06-10 20:00:05 INFO  PageActions:333 - Click On Request Inviter Link
+2021-06-10 20:00:05 INFO  SignUp_TestCase:44 -  Closing Browser 
+2021-06-10 20:00:05 INFO  SignUp_TestCase:46 -  @AfterSuite  
