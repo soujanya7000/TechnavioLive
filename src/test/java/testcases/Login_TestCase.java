@@ -34,7 +34,7 @@ public class Login_TestCase extends BaseClass {
 			sTestCaseName = getTestCaseName(this.toString());
 			ExcelReader.setExcelFile(getExcelPath() + getTestDataFileName(), "Login");
 			iTestCaseRow = ExcelReader.getRowContains(sTestCaseName, Constant.Col_TestCaseName);
-			//driver.get(properties.getProperty("freemiumDevUrl"));
+			driver.get(properties.getProperty("freemiumDevUrl"));
 			extentTest = onStart().startTest(sTestCaseName);
 			 extentTest=extent.startTest("loginValidations");
 		} catch (Exception e) {
