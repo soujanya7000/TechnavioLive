@@ -43,6 +43,7 @@ public class Login_TestCase extends BaseClass {
 	}
 	@BeforeTest
 	public void urlLogin() {
+		//login
 		driver.get(properties.getProperty("freemiumDevUrl"));
 		logger.info("Url Launched :" + properties.getProperty("freemiumDevUrl"));
 		
