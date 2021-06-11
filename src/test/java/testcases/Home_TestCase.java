@@ -42,7 +42,7 @@ public class Home_TestCase extends BaseClass {
 		logger.info("This is Before Class");
 	}
 
-	@Test
+	@Test(enabled=false)
 	public void checkingfavoriteIcons() throws Exception {
 		extentTest=extent.startTest("checkingfavoriteIcons");
 		//driver.navigate().refresh();
@@ -132,7 +132,7 @@ public class Home_TestCase extends BaseClass {
 		}
 	}
 
-	@Test(priority = 3,enabled=false)
+	@Test
 	public void checkingCartIcons() throws Exception {
 		extentTest = extent.startTest("checkingCart Icons");
 		extentTest.log(LogStatus.INFO, "verify for the availability of checkingCart Icons");
@@ -148,8 +148,7 @@ public class Home_TestCase extends BaseClass {
 			List<WebElement> cartIcons = PageLocators.latestReportsCartIcons;
 			WebElement cartIcon = PageLocators.goToIcon;
 			for (int i = 0; i < cartIcons.size(); i += 10) {
-				wait.until(ExpectedConditions
-						.visibilityOfElementLocated(By.xpath(PageLocators.waitForlatestTabReportsCartIcon)));
+				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.waitForlatestTabReportsCartIcon)));
 				String cartIconStatus = cartIconStatus(i);
 				reportName = PageLocators.latestReports.get(i).getText();
 				if (!cartIconStatus.equalsIgnoreCase("fa fa-shopping-cart add-to-cart  cart-added")) {

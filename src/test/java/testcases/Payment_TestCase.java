@@ -46,10 +46,14 @@ public class Payment_TestCase extends BaseClass {
 	@BeforeClass
 	public void homePageSetUp() throws IOException {
 		try {
+		//	ExcelReader.setExcelFile(javaGetExcelPath() + getTestDataFileName(), "Payment");
+			driver.get(properties.getProperty("freemiumDevUrl"));
+			logger.info("Url Launched :" + properties.getProperty("freemiumDevUrl"));
 			common_Login.freemiumUserlogin();
 			sTestCaseName = this.toString();
 			sTestCaseName = getTestCaseName(this.toString());
 			ExcelReader.setExcelFile(getExcelPath() + getTestDataFileName(), "Payment");
+			//ExcelReader.setExcelFile(javaGetExcelPath() + getTestDataFileName(), "Payment");
 			int iTestCaseRow = ExcelReader.getRowContains(sTestCaseName, Constant.Col_TestCaseName);
 			extentTest = onStart().startTest(sTestCaseName);
 		} catch (Exception e) {
@@ -107,7 +111,7 @@ public class Payment_TestCase extends BaseClass {
 		try {
 			extentTest = extent.startTest("validationForPaymentSection");
 			waitState();
-			fluentWaitState();
+			//fluentWaitState();
 			// Thread.sleep(20000);
 			logger.info("wait for click upgrade button");
 			wait.until(ExpectedConditions
@@ -134,14 +138,18 @@ public class Payment_TestCase extends BaseClass {
 			// Thread.sleep(3000);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.waitForStepButton2)));
 			scrollToElementContinueStep2();
-			PageActions.clickOnContinueStep2();
+			WebElement ClickonStep2= PageLocators.ContinueStep2;
+			buttonToClick(ClickonStep2);
+			//PageActions.clickOnContinueStep2();
 			logger.info("Click On Billing info Continue");
 			extentTest.log(LogStatus.INFO, "Click On Billing info Continue");
 			if (!validateBillingsection()) {
 				setBillingInformation(technavioCardAddress, technavioCardCity);
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.waitForStepButton2)));
 				scrollToElementContinueStep2();
-				PageActions.clickOnContinueStep2();
+				WebElement ClickonStep2Button= PageLocators.ContinueStep2;
+				buttonToClick(ClickonStep2Button);
+				//PageActions.clickOnContinueStep2();
 				logger.info("Click On Billing info Continue");
 				extentTest.log(LogStatus.INFO, "Click On Billing info Continue");
 			} else {
@@ -229,7 +237,9 @@ public class Payment_TestCase extends BaseClass {
 				if (!cartIconStatus.equalsIgnoreCase("fa fa-shopping-cart add-to-cart  cart-added")) {
 					wait.until(ExpectedConditions
 							.visibilityOfElementLocated(By.xpath(PageLocators.waitForlatestTabReportsCartIcon)));
-					cartIcons.get(i).click();
+					WebElement cartIconButton=cartIcons.get(i);
+					buttonToClick(cartIconButton);
+					//cartIcons.get(i).click();
 					logger.info("reportName  :  : " + reportName);
 					if (isCartMessageDisplay()) {
 						actualMsg = PageLocators.productAddedcart.getText();
@@ -237,8 +247,11 @@ public class Payment_TestCase extends BaseClass {
 						wait.until(ExpectedConditions
 								.invisibilityOfElementLocated(By.xpath(PageLocators.waitForCartAddErrorMsg)));
 						logger.info("waitForlatestTabGoToCartIcon  Completed");
-						PageActions.goToCartPage();
-						logger.info("goToCartPage  Completed");
+						WebElement ClickonIcon= PageLocators.goToIcon;
+						buttonToClick(ClickonIcon);
+						logger.info("click on go to cart page");
+						//PageActions.goToCartPage();
+						//logger.info("goToCartPage  Completed");
 						if (isReportNamePresentCartPage(reportName)) {
 						}
 					} else {
@@ -250,7 +263,10 @@ public class Payment_TestCase extends BaseClass {
 						Assert.assertEquals(actualMsg, "CartAddErrorMessage");
 					}
 				} else {
-					PageActions.goToCartPage();
+					WebElement ClickonIcon= PageLocators.goToIcon;
+					buttonToClick(ClickonIcon);
+					logger.info("click on go to cart page");
+					//PageActions.goToCartPage();
 					wait.until(
 							ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.waitForReportsCart)));
 					if (isReportNamePresentCartPage(reportName)) {
@@ -298,7 +314,9 @@ public class Payment_TestCase extends BaseClass {
 				if (!cartIconStatus.equalsIgnoreCase("fa fa-shopping-cart add-to-cart  cart-added")) {
 					wait.until(ExpectedConditions
 							.visibilityOfElementLocated(By.xpath(PageLocators.waitForlatestTabReportsCartIcon)));
-					cartIcons.get(i).click();
+					WebElement cartIconButton=cartIcons.get(i);
+					buttonToClick(cartIconButton);
+					//cartIcons.get(i).click();
 					logger.info("reportName  :  : " + reportName);
 					if (isCartMessageDisplay()) {
 						actualMsg = PageLocators.productAddedcart.getText();
@@ -433,25 +451,34 @@ public class Payment_TestCase extends BaseClass {
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.waitForStepButton2)));
 				// Thread.sleep(3000);
 				scrollToElementContinueStep2();
-				PageActions.clickOnContinueStep2();
+				WebElement ClickonIcon= PageLocators.ContinueStep2;
+				buttonToClick(ClickonIcon);
+				//PageActions.clickOnContinueStep2();
 				logger.info("Click On Billing info Continue");
 				extentTest.log(LogStatus.INFO, "Click On Billing info Continue");
 				if (!validateBillingsection()) {
 					setBillingInformation(technavioCardAddress, technavioCardCity);
-					PageActions.clickOnContinueStep2();
+					WebElement ClickonStep2= PageLocators.ContinueStep2;
+					buttonToClick(ClickonStep2);
+					logger.info("Click On Billing info Continue");
+					//PageActions.clickOnContinueStep2();
 				} else {
 					extentTest.log(LogStatus.FAIL, " Expected Error Message Not Found In Billing Section  ");
 					Assert.assertTrue(false);
 					captureScreen(driver, sTestCaseName);
 				}
-				PageActions.ClickOnProceed();
+				WebElement ClickOnProceed= PageLocators.proceedRadioIcon;
+				buttonToClick(ClickOnProceed);
 				logger.info("Click On Proceed");
+				//PageActions.ClickOnProceed();
 				extentTest.log(LogStatus.INFO, "Click On Proceed");
 				Thread.sleep(3000);
 				scrollToElementContinueStep2();
 				logger.info("Scrolling to Continue button");
 				extentTest.log(LogStatus.INFO, "Scrolling to Continue button");
-				PageActions.clickOnContinueStep2();
+				WebElement ClickonStep2= PageLocators.ContinueStep2;
+				buttonToClick(ClickonStep2);
+			//	PageActions.clickOnContinueStep2();
 				logger.info("Click On Billing info Continue");
 				extentTest.log(LogStatus.INFO, "Click On Billing info Continue");
 				Thread.sleep(3000);
@@ -526,25 +553,34 @@ public class Payment_TestCase extends BaseClass {
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.waitForStepButton2)));
 				// Thread.sleep(3000);
 				scrollToElementContinueStep2();
-				PageActions.clickOnContinueStep2();
+				WebElement ClickonStep2= PageLocators.ContinueStep2;
+				buttonToClick(ClickonStep2);
+				//PageActions.clickOnContinueStep2();
 				logger.info("Click On Billing info Continue");
 				extentTest.log(LogStatus.INFO, "Click On Billing info Continue");
 				if (!validateBillingsection()) {
 					setBillingInformation(technavioCardAddress, technavioCardCity);
-					PageActions.clickOnContinueStep2();
+					WebElement ClickonStep2Button= PageLocators.ContinueStep2;
+					buttonToClick(ClickonStep2Button);
+					logger.info("Click On Billing info Continue");
+					//PageActions.clickOnContinueStep2();
 				} else {
 					extentTest.log(LogStatus.FAIL, " Expected Error Message Not Found In Billing Section  ");
 					Assert.assertTrue(false);
 					captureScreen(driver, sTestCaseName);
 				}
-				PageActions.ClickOnProceed();
+				WebElement ClickOnProceed= PageLocators.proceedRadioIcon;
+				buttonToClick(ClickOnProceed);
+				//PageActions.ClickOnProceed();
 				logger.info("Click On Proceed");
 				extentTest.log(LogStatus.INFO, "Click On Proceed");
 				Thread.sleep(3000);
 				scrollToElementContinueStep2();
 				logger.info("Scrolling to Continue button");
 				extentTest.log(LogStatus.INFO, "Scrolling to Continue button");
-				PageActions.clickOnContinueStep2();
+				WebElement ClickonStep2Button= PageLocators.ContinueStep2;
+				buttonToClick(ClickonStep2Button);
+				//PageActions.clickOnContinueStep2();
 				logger.info("Click On Billing info Continue");
 				extentTest.log(LogStatus.INFO, "Click On Billing info Continue");
 				Thread.sleep(3000);
@@ -629,14 +665,22 @@ public class Payment_TestCase extends BaseClass {
 			throws InterruptedException {
 		// Thread.sleep(3000);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.waitForAddress)));
+		WebElement cardsendkeys= PageLocators.Address;
+		/*cardsendkeys(technavioCardAddress);
+		sendkeys(technavioCardAddress);*/
 		PageActions.addressParameter(technavioCardAddress);
 		logger.info("Entering to address field");
 		extentTest.log(LogStatus.INFO, "Entering to address field");
+		/*WebElement citySendkeys= PageLocators.city;
+		sendkeys(technavioCardCity);*/
 		PageActions.cityParameter(technavioCardCity);
 		logger.info("Entering to City field");
 		extentTest.log(LogStatus.INFO, "Entering to City field");
 		List<WebElement> list = PageLocators.countries;
-		list.get(4).click();
+		WebElement clickonCountry=list.get(4);
+        buttonToClick(clickonCountry);
+        logger.info("Click on country name");
+		//list.get(4).click();
 
 	}
 
@@ -662,6 +706,8 @@ public class Payment_TestCase extends BaseClass {
 				technavioCardNumCriteria = ExcelReader.getCellData(iTestCaseRow, Constant.Col_CardNumCriteria);
 				technavioCardCvvCriteria = ExcelReader.getCellData(iTestCaseRow, Constant.Col_CvvCriteria);
 				technavioCardName = ExcelReader.getCellData(iTestCaseRow, Constant.Col_CardName);
+				WebElement cardHolderName= PageLocators.city;
+				/*sendkeys(technavioCardName);*/
 				PageActions.cardHolderName(technavioCardName);
 				logger.info("Entering cardHolderName");
 				extentTest.log(LogStatus.INFO, "Entering cardHolderName");
@@ -770,7 +816,10 @@ public class Payment_TestCase extends BaseClass {
 			for (iTestCaseRow = 1; iTestCaseRow <= rowCount; iTestCaseRow++) {
 				Thread.sleep(3000);
 				scrollToProceedElement();
-				PageActions.clickOnProceedToAgree();
+				WebElement clickOnProceedToAgree= PageLocators.proceedToChoose;
+				buttonToClick(clickOnProceedToAgree);
+				logger.info("Click On Proceed To Agree");
+			//	PageActions.clickOnProceedToAgree();
 				if (iTestCaseRow != 1) {
 					PageActions.toAgreeCheck();
 				}
@@ -785,14 +834,20 @@ public class Payment_TestCase extends BaseClass {
 					captureScreen(driver, sTestCaseName);
 				}
 				//PageActions.clickOnProceedToAgree();
+				
 				PageActions.adressBox1(technavioOfflineAddress1);
 				logger.info("Entering Address Line 1");
 				extentTest.log(LogStatus.INFO, "Entering Address Line 1");
 				PageActions.adressBox2(technavioOfflineAddress2);
 				logger.info("Entering Address Line 2");
 				extentTest.log(LogStatus.INFO, "Entering Address Line 2");
-				PageActions.clickOnAgreeToChoose();
+				WebElement clickOnAgreeToChoose= PageLocators.agreeToChoose;
+				buttonToClick(clickOnAgreeToChoose);
+				logger.info("Click On AgreeTo Choose");
+				//PageActions.clickOnAgreeToChoose();
 				PageActions.clickOnProceedToBuy();
+				logger.info("Click On Proceed To Buy");
+				
 				return true;
 			}
 

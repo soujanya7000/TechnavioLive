@@ -9,6 +9,7 @@ import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.freemium.base.BaseClass;
@@ -39,6 +40,12 @@ public class Login_TestCase extends BaseClass {
 			e.printStackTrace();
 		}
 
+	}
+	@BeforeTest
+	public void urlLogin() {
+		driver.get(properties.getProperty("freemiumDevUrl"));
+		logger.info("Url Launched :" + properties.getProperty("freemiumDevUrl"));
+		
 	}
 	@AfterMethod
 	public void geneareReport(ITestResult iTestResult) throws IOException {
@@ -73,11 +80,14 @@ public class Login_TestCase extends BaseClass {
 					technavioPassword = ExcelReader.getCellData(iTestCaseRow, Constant.Col_Password);
 					technavioUserNameCriteria = ExcelReader.getCellData(iTestCaseRow, Constant.Col_UserName_Criteria);
 					wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.userId)));
-					actions.userNameParameter(technavioUserName);
-					extentTest.log(LogStatus.INFO, "Username passed    " + technavioUserName);
+					actions.userFieldClear();
+					actions.userNameParameter1(technavioUserName);
+					logger.info("User Email :: " + technavioUserName);
+					//actions.userNameParameter(technavioUserName);
+					extentTest.log(LogStatus.INFO, "Username passed   :: " + technavioUserName);
 					wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.nextButtonXpath)));
-					PageActions.clickOnNextButton();
-					extentTest.log(LogStatus.INFO, "Click on Next Button");
+					PageActions.clickOnNextButton1();
+					extentTest.log(LogStatus.INFO, "Click onNext Button");
 					if (!"".equalsIgnoreCase(technavioUserNameCriteria)
 							&& "invalid".equalsIgnoreCase(technavioUserNameCriteria)) {
 						wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(PageLocators.userNameError)));
@@ -85,14 +95,14 @@ public class Login_TestCase extends BaseClass {
 							if (PageLocators.useriderr.getText().equals(userNameErrorMessage1)) {
 								userNameInvalidPass(LocatorsAction, userNameErrorMessage1);
 								Reporter.log(PageLocators.useriderr.getText() + " Expected Message");
-								extentTest.log(LogStatus.INFO, "User Error Message is visible" + userNameErrorMessage1);
+								extentTest.log(LogStatus.PASS, "User Error Message is visible :: " + userNameErrorMessage1);
 							} else if (PageLocators.useriderr.getText().equals(userNameErrorMessage2)) {
 								userNameInvalidPass(LocatorsAction, userNameErrorMessage2);
-								extentTest.log(LogStatus.INFO, "User Error is Message" + userNameErrorMessage2);
+								extentTest.log(LogStatus.PASS, "User Error is Message :: " + userNameErrorMessage2);
 								Reporter.log(PageLocators.useriderr.getText() + " Expected Message");
 							} else if (PageLocators.useriderr.getText().equals(userNameErrorMessage3)) {
 								userNameInvalidPass(LocatorsAction, userNameErrorMessage3);
-								extentTest.log(LogStatus.INFO, "User Error is Message" + userNameErrorMessage3);
+								extentTest.log(LogStatus.PASS, "User Error is Message :: " + userNameErrorMessage3);
 							} else {
 
 								userNameFail(LocatorsAction);
@@ -100,7 +110,7 @@ public class Login_TestCase extends BaseClass {
 
 						} else if ("".equalsIgnoreCase(technavioUserName)) {
 							userNameInvalidPass(LocatorsAction, "");
-							extentTest.log(LogStatus.INFO, "Blank User Name passed");
+							extentTest.log(LogStatus.PASS, "Blank User Name passed");
 							
 
 						} else {
@@ -112,7 +122,7 @@ public class Login_TestCase extends BaseClass {
 						if (isUserErrorMessageDisplayed()) {
 
 							userNameValidPass(LocatorsAction);
-							extentTest.log(LogStatus.INFO, "Valid User Name passed" + LocatorsAction);
+							extentTest.log(LogStatus.INFO, "Valid User Name passed :: " + technavioUserName);
 							continue;
 						}
 
@@ -134,7 +144,7 @@ public class Login_TestCase extends BaseClass {
 
 	}
 
-	private boolean isUserErrorMessageDisplayed() {
+	private boolean isUserErrorMessageDisplayed() throws Exception {
 
 		try {
 			if (PageLocators.useriderr.isDisplayed()) {
@@ -144,8 +154,12 @@ public class Login_TestCase extends BaseClass {
 			}
 
 		} catch (Exception e) {
+			extentTest.log(LogStatus.FAIL, "User Error Message Not Displayed");
+			Assert.assertTrue(false);
+			captureScreen(driver, sTestCaseName);
 			return false;
 		}
+		
 
 	}
 
@@ -155,6 +169,9 @@ public class Login_TestCase extends BaseClass {
 			if (PageLocators.pwderr.isDisplayed()) {
 				return true;
 			} else {
+				extentTest.log(LogStatus.FAIL, "Password Error Message Not Displayed");
+				Assert.assertTrue(false);
+				captureScreen(driver, sTestCaseName);
 				return false;
 			}
 
@@ -165,8 +182,8 @@ public class Login_TestCase extends BaseClass {
 	}
 
 	private boolean validatePassword(String sTestCaseName) throws Exception {
-		String passwordErrorMessage1 = "Your password is correct";
-		String passwordErrorMessage2 = "Please enter your passwords";
+		String passwordErrorMessage1 = "Your password is incorrect";
+		String passwordErrorMessage2 = "Please enter your password";
 		String passwordErrorMessage3 = "Your account is temporarily locked to prevent unauthorized use. Try again later.";
 		String technavioPasswordCriteria = null;
 		technavioPasswordCriteria = ExcelReader.getCellData(iTestCaseRow, Constant.Col_Password_Criteria);
@@ -175,9 +192,10 @@ public class Login_TestCase extends BaseClass {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.passwordId)));
 			PageActions.passwordParameter(technavioPassword);
 			logger.info(" Password : " + technavioPasswordCriteria);
-			extentTest.log(LogStatus.INFO, "password passed      " + technavioPassword  );
+			extentTest.log(LogStatus.INFO, "password passed   ::  "   );
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.signInButtonId)));
-			PageActions.clickOnSignInButton();
+			clickSignInButton();
+			//PageActions.clickOnSignInButton();
 			extentTest.log(LogStatus.INFO, "Click on SignIn Button");
 
 			if (!"".equalsIgnoreCase(technavioPasswordCriteria)
@@ -188,14 +206,14 @@ public class Login_TestCase extends BaseClass {
 					wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.passwordId)));
 					if (PageLocators.pwderr.getText().contains(passwordErrorMessage1)) {
 						navigateUserNamePage(passwordErrorMessage1);
-						extentTest.log(LogStatus.INFO, "Password Error Message present   " + passwordErrorMessage1);
+						//extentTest.log(LogStatus.INFO, "Password Error Message present   " + passwordErrorMessage1);
 						// Reporter.log(PageLocators.useriderr.getText() + " Expected Message");
 					} else if (PageLocators.pwderr.getText().contains(passwordErrorMessage2)) {
 						navigateUserNamePage(passwordErrorMessage2);
-						extentTest.log(LogStatus.INFO, "Password Error Message present   " + passwordErrorMessage2);
+						extentTest.log(LogStatus.INFO, "Password Error Message present  :: " + passwordErrorMessage2);
 					} else if (PageLocators.pwderr.getText().contains(passwordErrorMessage3)) {
 						navigateUserNamePage(passwordErrorMessage3);
-						extentTest.log(LogStatus.INFO, "Password Error Message present   " + passwordErrorMessage3);
+						extentTest.log(LogStatus.INFO, "Password Error Message present ::  " + passwordErrorMessage3);
 					} else {
 						passwordFail(LocatorsAction);
 					}
@@ -218,6 +236,9 @@ public class Login_TestCase extends BaseClass {
 			return false;
 		} catch (Exception e) {
 			// passwordFail(LocatorsAction);
+			extentTest.log(LogStatus.FAIL, "Password Validation Fail");
+			Assert.assertTrue(false);
+			captureScreen(driver, sTestCaseName);
 			return false;
 		}
 
@@ -231,11 +252,11 @@ public class Login_TestCase extends BaseClass {
 	private void passwordFail(PageActions LocatorsAction) throws Exception {
 		ExcelReader.setCellData("Fail ", iTestCaseRow, Constant.Col_Status);
 		ExcelReader.setCellData("Password Test Failed  ", iTestCaseRow, Constant.Col_Comments);
-		PageActions.passwordFieldclear();
+		//PageActions.passwordFieldclear();
 		/* Assert.assertFalse(true, PageLocators.pwderr.getText()); */
 		logger.info("Invalid Message Displyed :" + PageLocators.pwderr.getText());
 		extentTest.log(LogStatus.FAIL, "Invalid Message Displyed :" + PageLocators.pwderr.getText());
-		Assert.assertFalse(true, PageLocators.pwderr.getText());
+		Assert.assertTrue(false, PageLocators.pwderr.getText());
 		driver.navigate().to(getSiteUrl());
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(PageLocators.userId)));
 
@@ -246,7 +267,8 @@ public class Login_TestCase extends BaseClass {
 		ExcelReader.setCellData(PageLocators.pwderr.getText(), iTestCaseRow, Constant.Col_Error_Msg);
 		PageActions.passwordFieldclear();
 		Assert.assertEquals(PageLocators.pwderr.getText(), validationMessage);
-		logger.info("Invalid Message Displyed :" + PageLocators.pwderr.getText());
+		logger.info("Invalid Message Displyed : " + PageLocators.pwderr.getText());
+		extentTest.log(LogStatus.PASS, "passWord InvalidPass :: " + PageLocators.pwderr.getText());
 
 	}
 
@@ -261,7 +283,7 @@ public class Login_TestCase extends BaseClass {
 	private void userNameInvalidPass(PageActions LocatorsAction, String validationMessage) throws Exception {
 		ExcelReader.setCellData("Pass ", iTestCaseRow, Constant.Col_Status);
 		ExcelReader.setCellData(PageLocators.useriderr.getText(), iTestCaseRow, Constant.Col_Error_Msg);
-		PageActions.userFieldClear();
+		//PageActions.userFieldClear();
 		extentTest.log(LogStatus.INFO, "Username field clear");
 		Assert.assertEquals(PageLocators.useriderr.getText(), validationMessage);
 		logger.info("Invalid Message Displyed :" + PageLocators.useriderr.getText());
@@ -270,7 +292,7 @@ public class Login_TestCase extends BaseClass {
 	private void userNameValidPass(PageActions LocatorsAction) throws Exception {
 		ExcelReader.setCellData("Pass ", iTestCaseRow, Constant.Col_Status);
 		ExcelReader.setCellData(PageLocators.useriderr.getText(), iTestCaseRow, Constant.Col_Error_Msg);
-		PageActions.userFieldClear();
+		//PageActions.userFieldClear();
 		extentTest.log(LogStatus.INFO, "Username field clear");
 		Assert.assertTrue(true);
 		logger.info("Invalid Message Displyed :" + PageLocators.useriderr.getText());
@@ -280,10 +302,10 @@ public class Login_TestCase extends BaseClass {
 	private void userNameFail(PageActions LocatorsAction) throws Exception {
 		ExcelReader.setCellData("Fail ", iTestCaseRow, Constant.Col_Status);
 		ExcelReader.setCellData("UserName Test Failed  ", iTestCaseRow, Constant.Col_Comments);
-		PageActions.userFieldClear();
+		//PageActions.userFieldClear();
 		extentTest.log(LogStatus.INFO, "Username field clear");
 		logger.info("Invalid Message Displyed :" + PageLocators.useriderr.getText());
-		extentTest.log(LogStatus.FAIL, "Invalid Message Displyed" + PageLocators.useriderr.getText());
+		extentTest.log(LogStatus.FAIL, "Invalid Message Displyed :: " + PageLocators.useriderr.getText());
 		Assert.assertFalse(true, PageLocators.useriderr.getText());
 
 	}
@@ -292,10 +314,11 @@ public class Login_TestCase extends BaseClass {
 
 		try {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(PageLocators.adminIconClassName)));
-			PageActions.adminIcon();
+			clickOnAdminIcon();
 			extentTest.log(LogStatus.INFO, "Click on Admin Icon");
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(PageLocators.logOutIconClassName)));
-			PageActions.logOut();
+			clickOnLogout();
+			//PageActions.logOut();
 			extentTest.log(LogStatus.INFO, "Successfull LogOut");
 			return true;
 

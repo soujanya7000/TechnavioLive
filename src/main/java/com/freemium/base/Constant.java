@@ -9,7 +9,7 @@ public class Constant {
 	public static final String GeckoDriver_path ="\\src\\test\\resources\\executables\\geckodriver.exe";
 	public static final String ChromeDriver_path = "\\src\\test\\resources\\executables\\chromedriver.exe";
 	public static final String EdgeDriver_path = "\\src\\test\\resources\\executables\\msedgedriver.exe";
-	public static final String Path_ScreenShot = "C:\\Users\\Gurudeesh\\eclipse-workspace\\com.technavio\\target\\surefire-reports\\html";
+	//public static final String Path_ScreenShot = "C:\\Users\\Gurudeesh\\eclipse-workspace\\com.technavio\\target\\surefire-reports\\html";
 //	public static final String test=C:\Users\Gurudeesh\eclipse-workspace\com.technavio\src\test\resources\excel
 	public static final int Col_TestCaseName = 0;
 	public static final int Col_Browser = 1;

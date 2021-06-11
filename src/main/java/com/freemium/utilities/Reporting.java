@@ -1,4 +1,4 @@
-package com.freemium.utilities;
+/*package com.freemium.utilities;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -16,7 +16,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 
 
-/*
+
 public class Reporting extends TestListenerAdapter
 {
 	public ExtentHtmlReporter htmlReporter;
@@ -85,7 +85,7 @@ public class Reporting extends TestListenerAdapter
 		extent.flush();
 	}
 }
-*/
+
 
 public class Reporting{
 	
@@ -138,4 +138,4 @@ public class Reporting{
 		extent.close();
 	}
 		
-}
+}*/

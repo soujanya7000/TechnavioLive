@@ -1,5 +1,8 @@
 package com.freemium.utilities;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -10,6 +13,11 @@ import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import javax.script.Invocable;
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
+
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -19,11 +27,12 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 
@@ -82,6 +91,10 @@ public class Utilities {
 
 	public WebDriver OpenBrowser() throws Exception {
 		try {
+			/*DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("incognito");
+			capabilities.setCapability(ChromeOptions.CAPABILITY, options);*/
 			String browserName = getBrowserName();
 			if (browserName.equals("firefox")) {
 				System.setProperty("webdriver.gecko.driver",
@@ -114,11 +127,11 @@ public class Utilities {
 	public void waitState() {
 		wait = new WebDriverWait(driver, 30);
 	}
-	public void fluentWaitState() {
+	/*public void fluentWaitState() {
 		fluentWait = new FluentWait(driver);
 		fluentWait.pollingEvery(1, TimeUnit.MILLISECONDS);
 		fluentWait.withTimeout(30, TimeUnit.SECONDS);
-	}
+	}*/
 
 	public void navigateBack() {
 		driver.navigate().back();
@@ -129,7 +142,6 @@ public class Utilities {
 	}
 	public void scrollToElement() {
 		WebElement element=PageLocators.scrollToReport;
-		javaScript();
 		JavascriptExecutor js =(JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView(true);", element);
 	}
@@ -148,8 +160,78 @@ public class Utilities {
 		JavascriptExecutor js =(JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView(true);", element);
 	}
-	public void javaScript() {
+	public void cliclOnIndustriesName() {
+		WebElement element=PageLocators.industriesName;
+		JavascriptExecutor js =(JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", element);
+	}
+	public void cliclOnActiveExplore() {
+		WebElement element=PageLocators.activeExplore;
+		JavascriptExecutor js =(JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", element);
+	}
+	public void clickOnAdminIcon() {
+		WebElement element=PageLocators.adminicon;
+		JavascriptExecutor js =(JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", element);
+		
+	}
+	public void clickOnTrashIcon() {
+		JavascriptExecutor js =(JavascriptExecutor) driver;
+		js.executeScript("document.querySelector('.trash-view').click()");
+	}
+	public void clickOnCopyIcon() {
+		JavascriptExecutor js =(JavascriptExecutor) driver;
+		js.executeScript("document.querySelector('#item_to_copy').click()");
+		
+	}
+	
+	public void clickOnLogout() {
+		WebElement clickOnelement=PageLocators.logout;
+		JavascriptExecutor js =(JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", clickOnelement);
+	}
+	public void javaClickOnMyAccount() {
+		WebElement ClickonMyAccount= PageLocators.myAccountDetails;
 		JavascriptExecutor java =(JavascriptExecutor) driver;
+		java.executeScript("arguments[0].click();",ClickonMyAccount);
+		}
+	public void cliclOnindustriesL2Media() {
+		WebElement element=PageLocators.industriesL2Media;
+		JavascriptExecutor js =(JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", element);
+	}
+	public void cliclOnindustriesL2Tele() {
+		WebElement element=PageLocators.industriesL2Tele;
+		JavascriptExecutor js =(JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", element);
+	}
+	public void clickSignInButton() {
+		WebElement element=PageLocators.pwdnext;
+		JavascriptExecutor js =(JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", element);
+	}
+	public void Actions() {
+		Actions a = new Actions(driver);
+	}
+	public void pastText() throws AWTException {
+		Robot robot=new Robot();
+		robot.keyPress(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_V);
+	}
+	public void ReleasePastText() throws AWTException {
+		Robot robot=new Robot();
+		robot.keyRelease(KeyEvent.VK_V);
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+		
+	}
+	public void buttonToClick(WebElement buttons) {
+		JavascriptExecutor java =(JavascriptExecutor) driver;
+		java.executeScript("arguments[0].click();",buttons);
+	}
+	public void  Province(WebElement element , String PassingParameters) {
+		JavascriptExecutor java =(JavascriptExecutor) driver;
+		java.executeScript("arguments[0].value"+"="+"'"+ PassingParameters +"'"+";",element);
 	}
 	public void actions() {
 		Actions action=new Actions(driver);
@@ -172,7 +254,7 @@ public class Utilities {
 	public ExtentReports onStart() {
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());// time stamp
 		String reportName = "Technavio_ExtentReport-" + timeStamp + ".html";
-		extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/" + reportName, true);
+		extent = new ExtentReports(System.getProperty("user.dir") + "\\src\\test\\resources\\tnlreports\\" + reportName, true);
 		extent.addSystemInfo("Host Name", "Technavio Live Phalcon");
 		extent.addSystemInfo("User Name", "QA Automation");
 		extent.addSystemInfo("Environment", "Test server");
@@ -215,6 +297,20 @@ public class Utilities {
 		else
 			throw new RuntimeException("browser name not specified in the automationrepository.properties file.");
 	}
+	public ScriptEngine javaGetExcelPath() throws Exception, ScriptException {
+		ScriptEngineManager ScriptEngineManager =new ScriptEngineManager();
+		ScriptEngine engine = ScriptEngineManager.getEngineByName("nashorn");
+
+		String excelPath = properties.getProperty("freemiumExcelPath");
+		Invocable invocable = (Invocable)engine;
+		invocable.invokeFunction(excelPath);
+	
+		//excelIO = new GC.Spread.Excel.IO(); 
+		if (engine != null)
+			return engine;
+		else
+			throw new RuntimeException("browser name not specified in the automationrepository.properties file.");
+	}
 
 	public String getSiteUrl() {
 		String freemiumSiteUrl = properties.getProperty("freemiumDevUrl");
@@ -249,21 +345,21 @@ public class Utilities {
 			throw new RuntimeException(" freemium password not specified in the automationrepository.properties file.");
 	}
 	public String getFremiumName() {
-		String name = properties.getProperty("Name");
+		String name = properties.getProperty("signUpName");
 		if (name != null)
 			return name;
 		else
 			throw new RuntimeException(" freemium Name not specified in the automationrepository.properties file.");
 	}
 	public String getFremiumEmail() {
-		String email = properties.getProperty("email");
+		String email = properties.getProperty("signUpEmail");
 		if (email != null)
 			return email;
 		else
 			throw new RuntimeException(" freemium Email not specified in the automationrepository.properties file.");
 	}
 	public String getFremiumPasswordField() {
-		String passwordField = properties.getProperty("passwordField");
+		String passwordField = properties.getProperty("signUpPasswordField");
 		if (passwordField != null)
 			return passwordField;
 		else

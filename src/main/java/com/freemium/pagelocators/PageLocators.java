@@ -55,7 +55,7 @@ public class PageLocators {
 	public static String waitForBasicButton="(//*[contains(@class,'btn-st card_btn')]/span)[3]";
 	public static String waitForTeamsButton="(//*[contains(@class,'btn-st card_btn')]/span)[4]";
 	public static String waitForThanksMessage="//*[@class='search-found']";
-	public static String waitForLoader="//*[@id='cover-spin']";
+	public static String waitForLoader="(//*[@class='cookiesbar']/following::div)[1]";
 	public static String waitForSubscriptionHistory="(//*[text()=' Subscription History '])|//*[@class='plan_his']";
 	public static String waitForContact="(//*[contains(@class,'btn-st card_btn')])[5]";
 	public static String waitForStepButton1="//*[contains(@class,'step_1_payment')]|//*[@class=' text-right']";
@@ -68,6 +68,10 @@ public class PageLocators {
 	public static String firstIconStatus="((((//div[@class='tab-meta'])[2]/child::div[contains(@class,'new-product-card ')])/div/div/ul)/li[3])[1]";
 	public static String waitForReportPurchase="//*[@class='col-md-8']/h3";
 	public static String waitForPaymentHistory="(//*[@class='success-msg'])/child::a";
+	public static String waitForDoItLater="(//*[@class='text-white'])[2]";
+	
+	public static String waitForExploreButton="//*[text()='EXPLORE']";
+	public static String myaccountEmailId="//*[@class='col-md-6']/h4";
 	
 	//public @FindBy (xpath="//*[@class='search-found']/span") WebElement waitForThankYouM;
 	
@@ -90,9 +94,9 @@ public class PageLocators {
 	
 	
 	// Logout Page Locators
-	@FindBy(how = How.CLASS_NAME, using = "admin-avatar")
+	@FindBy(how = How.XPATH, using = "(//*[@class='fa fa-user-circle user_icon'])[1]")
 	public static WebElement adminicon;
-	@FindBy(how = How.CLASS_NAME, using = "drop-bottom")
+	@FindBy(how = How.XPATH, using = "(//*[@class='drop setting active'])[2]/child::span")
 	public static WebElement logout;
 	
 	//Home page Locators
@@ -156,6 +160,48 @@ public class PageLocators {
 	public static WebElement requestInvite;
 	@FindBy(how = How.XPATH, using = "//*[contains(@class,'alert alert-success')]/p")
 	public static WebElement sucessInvite;
+	@FindBy(how = How.XPATH, using = "(//*[contains(@class,'text-center font')])[2]")
+	public static WebElement selectPreferrence;
+	@FindBy(how = How.XPATH, using = "//*[@class='preferred-industry active show']")
+	public static WebElement prefferedIndustriesActive;
+	@FindBy(how = How.XPATH, using = "(//*[@class='active show'])[2]")
+	public static WebElement latestTab;
+	@FindBy(how = How.XPATH, using = "//*[contains(@class,'captcha_error')]")
+	public static WebElement CaptchaError;
+	
+	@FindBy(how = How.XPATH, using = "//*[@class='col-md-6']/h4")
+	public static WebElement MyAccountUserEMail;
+	
+	
+	
+	
+	@FindBy(how = How.XPATH, using = "//*[contains(@class,' nav-link dropdown-toggle py-1')]")
+	public static WebElement visibilityOfL2Dropdown;
+	
+	@FindBy(how=How.XPATH,using="//*[@class='row-pref']/div")
+	public static List<WebElement> listOfPrefferedReports;
+	
+	
+	
+	
+	
+	
+	@FindBy(how = How.XPATH, using = "//*[contains(@class,'password_error')]")
+	public static WebElement SignUpPasswordErrorMsg;
+	@FindBy(how = How.XPATH, using = "(//*[contains(@class,'email_error')])[1]")
+	public static WebElement SignUpEmailErrorMsg;
+	@FindBy(how = How.XPATH, using = "//*[contains(@class,'chk_error')]")
+	public static WebElement SignCheckErrorMsg;
+	@FindBy(how = How.XPATH, using = "(//*[contains(@class,'name_error')])[1]")
+	public static WebElement SignNameErrorMsg;
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -353,6 +399,26 @@ public class PageLocators {
 	public static WebElement paymentHistoryText;
 	@FindBy(how=How.XPATH,using="(//*[@class='success-msg'])/child::a")
 	public static WebElement paymentHistoryClassName;
+	
+	//My Prefference page
+	
+	@FindBy(how=How.XPATH,using="(//*[contains(@class,'ml-auto fa fa-plus-square')])[1]")
+	public static WebElement industriesName;
+	@FindBy(how=How.XPATH,using="(//*[contains(@class,'btn-primary-default')])[1]")
+	public static WebElement industriesL2Media;
+	@FindBy(how=How.XPATH,using="(//*[contains(@class,'btn-primary-default')])[2]")
+	public static WebElement industriesL2Tele;
+	
+	@FindBy(how=How.XPATH,using="(//*[contains(@class,'text-color')])")
+	public static WebElement inActiveExplore;
+	
+	@FindBy(how=How.XPATH,using="(//*[contains(@class,'btn-warning')])")
+	public static WebElement activeExplore;
+	
+	
+	
+	
+	
 	
 	
 	

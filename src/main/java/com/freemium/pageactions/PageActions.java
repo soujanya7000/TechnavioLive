@@ -25,10 +25,20 @@ public class PageActions extends Utilities {
 		PageLocators.useridnext.click();
 		log.info("Click On Next Button");
 	}
+	public static void  clickOnNextButton1() {
+		WebElement element1 =PageLocators.useridnext;
+		JavascriptExecutor java =(JavascriptExecutor) driver;
+		java.executeScript("arguments[0].click();",element1);
+	}
 
 	public  void userNameParameter(String userName) throws Exception {
 		PageLocators.userid.sendKeys(userName);
 		log.info(" Freemium User Name Passed");
+	}
+	public void  userNameParameter1(String PassingParameters) {
+		WebElement element1 =PageLocators.userid;
+		JavascriptExecutor java =(JavascriptExecutor) driver;
+		java.executeScript("arguments[0].value"+"="+"'"+ PassingParameters +"'"+";",element1);
 	}
 
 	public static void userFieldClear() {
@@ -41,9 +51,14 @@ public class PageActions extends Utilities {
 		log.info(" Click on Sign-In Button");
 	}
 
-	public static void passwordParameter(String ssoPassword) throws Exception {
+	/*public static void passwordParameter(String ssoPassword) throws Exception {
 		PageLocators.pwid.sendKeys(ssoPassword);
 		log.info("Freemium Password Passed");
+	}*/
+	public static void  passwordParameter(String ssoPassword) {
+		WebElement element1 =PageLocators.pwid;
+		JavascriptExecutor java =(JavascriptExecutor) driver;
+		java.executeScript("arguments[0].value"+"="+"'"+ ssoPassword +"'"+";",element1);
 	}
 
 	public static void passwordFieldclear() {
@@ -287,11 +302,11 @@ public class PageActions extends Utilities {
 		}
 		public static void clickONToAgree() throws Exception {
 			PageLocators.toAgree.click();
-			log.info("Click On Next Button");
+			log.info("Click On To Agree");
 		}
 		public static void clickONSubmit() throws Exception {
 			PageLocators.submit.click();
-			log.info("Click On Next Button");
+			log.info("Click On Submit");
 		}
 		public static void clickONinviteUser() throws Exception {
 			PageLocators.inviteUser.click();

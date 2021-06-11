@@ -1,4 +1,4 @@
-package com.freemium.utilities;
+/*package com.freemium.utilities;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -155,3 +155,4 @@ public class RestUtils {
 	}
 
 }
+*/
